@@ -27,30 +27,6 @@
 
   /* home page end  */
 
-  /* checkout page start  */
-  .checkout-billing-form.shadow-sm {
-    margin-bottom: 30px;
-  }
-
-  .checkbox-head {
-    margin-left: 13%;
-  }
-
-  .checkout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .checkout-billing-form {
-    width: 85%;
-  }
-
-  .checkout-details-section {
-    width: 85%;
-  }
-
-  /* checkout page end  */
   /* login page  */
   .login-form form {
     padding: 18px !important;
@@ -405,31 +381,6 @@
 
   /* home page end  */
 
-  /* checkout page start  */
-  .checkout-billing-form.shadow-sm {
-    margin-bottom: 30px;
-  }
-
-  .checkbox-head {
-    margin-left: 13%;
-  }
-
-  .checkout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .checkout-billing-form {
-    width: 85%;
-  }
-
-  .checkout-details-section {
-    width: 85%;
-  }
-
-  /* checkout page end  */
-
   /* login page start  */
   .login-form form {
     top: 515px;
@@ -750,30 +701,7 @@
 
   /* home page end  */
 
-  /* checkout page start  */
-  .checkout-billing-form.shadow-sm {
-    margin-bottom: 30px;
-  }
-
-  .checkbox-head {
-    margin-left: 13%;
-  }
-
-  .checkout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .checkout-billing-form {
-    width: 85%;
-  }
-
-  .checkout-details-section {
-    width: 85%;
-  }
-
-  /* checkout page end  */
+  
 
   /* login form start */
   .login-bg img {
@@ -1150,20 +1078,6 @@ main.dashboard-content-wrapper {
 
   /* home page end  */
 
-  /* checkout page start  */
-  .checkout-details-section {
-    width: 315px;
-  }
-
-  .checkout-billing-form {
-    width: 442px;
-  }
-
-  .checkbox-head {
-    margin-left: 3%;
-  }
-
-  /* checkout page end  */
   /* book page start  */
   .books-collection {
     grid-template-columns: auto auto auto;
@@ -1666,21 +1580,6 @@ main.dashboard-content-wrapper {
 
   /* home page end  */
 
-  /* checkout page start  */
-  .checkout-details-section {
-    width: 355px;
-  }
-
-  .checkbox-head {
-    margin-left: 6%;
-  }
-
-  .checkout-billing-form {
-    width: 558px;
-  }
-
-  /* checkout page end  */
-
   /* book page start  */
   .books-collection {
     grid-template-columns: auto auto auto auto;
@@ -1951,22 +1850,6 @@ main.dashboard-content-wrapper {
 }
 
 @media only screen and (min-width: 1200px) {
-
-  /* check out start  */
-  .checkout-section {
-    margin: 0 auto;
-    max-width: 1180px;
-  }
-
-  .checkout-billing-form {
-    width: 558px;
-  }
-
-  .checkout-details-section {
-    width: 386px;
-  }
-
-  /* check out end  */
 
   /* login start */
   .login-bg img {

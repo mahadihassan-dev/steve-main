@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Checkout</title>
     <!-- Theme Core -->
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/checkout-responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/dashboard-layout.css">
@@ -33,15 +35,15 @@
             <!-- title section  start-->
             <div class="checkbox-head">
                 <h2 class="checkout-title"> Checkout </h2>
-                <p class="checkout-breadcrumbs"> <a href="http://"> Home ></a> Checkout</p>
+                <p class="checkout-breadcrumbs"> <a href="#"> Home ></a> Checkout</p>
             </div>
 
 
             <!-- title section  end-->
-            <div class="checkout">
+            <div class="checkout-wrapper">
 
                 <!-- Billing Details form start -->
-                <div class="checkout-billing-form shadow-sm">
+                <div class="checkout-filed-col checkout-field-col-70 checkout-billing-form shadow-sm">
                     <h2>Billing Details</h2>
 
                     <!-- Billing form -->
@@ -90,7 +92,7 @@
                 <!-- Billing Details form end -->
 
                 <!-- Pricing Details section  -->
-                <div class="checkout-details-section shadow-sm">
+                <div class="checkout-filed-col checkout-field-col-30 checkout-details-section shadow-sm">
                     <h2>Pricing Details</h2>
                     <hr />
                     <div class="checkout-information">
@@ -101,7 +103,7 @@
                             <p>Publication: <span>The NY Publisher</span></p>
 
                         </div>
-                        <div>
+                        <div class="checkout-product-thumb">
                             <img src="assets/images/Rectangle 24667.png" alt="">
                         </div>
                     </div>
@@ -116,8 +118,8 @@
                             <input type="text" class="form-control" id="price" placeholder="Discount code">
                             <button type="submit" class="btn btn-primary mb-3">Apply</button>
                         </div>
-                        <hr />
-                        <div class="d-flex justify-content-between">
+                        
+                        <div class="d-flex justify-content-between align-items-center">
                             <p>Discount</p>
                             <p class="form-label text-danger">-$10</p>
                         </div>
