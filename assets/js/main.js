@@ -52,7 +52,7 @@ new YouTubeToHtml5({ withAudio: true });
         $videoCta = $(".home-buy-button");
 
         $diviVideo.on("timeupdate", function (e) {
-            if (e.target.currentTime >= 5) {
+            if (e.target.currentTime >= 900) {
                 $videoCta.addClass("show-button");
             }
 

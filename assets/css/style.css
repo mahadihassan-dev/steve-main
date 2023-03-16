@@ -558,6 +558,10 @@ hr {
   text-align: center;
   margin-bottom: 26px;
 }
+
+.best-selling-book {
+  padding: 60px 30px;
+}
 /* My dashboard :: End */
 
 .swiper {
@@ -567,8 +571,8 @@ hr {
 }
 .swiper .swiper-slide {
   position: relative;
-  width: 284px;
-  height: 400px;
+  width: 150px;
+  height: 200px;
   /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
   /* filter: grayscale(80%); */
   transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
@@ -650,7 +654,8 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
-    grid-row-gap: 0px; 
+    grid-row-gap: 0px;
+    padding: 0px 60px;
 }
 
 .browse-category .browse-books {
@@ -792,3 +797,20 @@ a {
 
 /* books page end  */
 /* browse Category :: End */
+.guides-section {
+  padding: 30px;
+}
+.guides-collection {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+}
+
+.dashboard .my-dashboard {
+  padding: 0;
+}
+.dashboard main.dashboard-content-wrapper {
+  padding: 0;
+}

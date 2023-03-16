@@ -88,7 +88,7 @@
 }
 
 .sidebar-btn {
-    display: block;
+    display: none;
     position: absolute;
     bottom: 20%;
     right: -15px;
@@ -144,11 +144,11 @@
     left: 0;
     bottom: 0;
     z-index: 99;
-    -webkit-transition: all .3s ease;
+    /* -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition: all .3s ease; */
 }
 
 .dash-main-right {
@@ -156,11 +156,11 @@
     height: auto;
     float: left;
     margin-top: 105px;
-    -webkit-transition: all .3s ease;
+    /* -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-    transition: all .3s ease;
+    transition: all .3s ease; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

@@ -406,7 +406,6 @@
   /* guides page start  */
   .guides-collection {
     grid-template-columns: auto;
-    justify-items: center;
   }
 
   /* guides page end  */
