@@ -105,7 +105,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 124px;
+    height: 150px;
 }
 
 .checkout-information h6 {
@@ -122,6 +122,10 @@
     line-height: 18px;
 }
 
+.payment-amount {
+    margin-top: 25px;
+}
+
 .checkout-product-thumb {
     padding: 10px;
     background: #E7F1FE;
@@ -133,7 +137,7 @@
 }
 
 .checkout-discount button {
-    padding: 10px 24px;
+    padding: 10px 40px;
     border-radius: 8px;
     background-color: #daeafd;
     color: #000000;
@@ -154,6 +158,10 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
+}
+
+.main-price p:nth-child(2) {
+    font-weight: 600;
 }
 
 .checkout-discount .pay-btn {

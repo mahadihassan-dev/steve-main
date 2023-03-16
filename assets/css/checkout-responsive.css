@@ -68,6 +68,16 @@
         width: 85%;
     }
 
+    .checkout-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
 
 }
 
@@ -100,21 +110,41 @@
 
 /* For Big and Average Size Tab */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-
-    /* checkout page start  */
-    .checkout-details-section {
-        width: 315px;
+    .checkout-body {
+        background-color: rgb(250, 252, 255);
+        height: 100%;
+        width: 100%;
+        padding: 49px 0px;
     }
+    .checkout-details-section {
+        width: 100%;
+        margin-top: 30px;
+    }
+    /* checkout page start  */
+  
 
     .checkout-billing-form {
-        width: 442px;
+        width: 100%;
     }
 
     .checkbox-head {
         margin-left: 3%;
+        padding: 0px 15px;
     }
-
+    
+    
+    
     /* checkout page end  */
+    .checkout-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        padding: 30px;
+    }
 }
 
 /* for Tab and Laptop Medium Size Screen */
@@ -142,7 +172,9 @@
 
 /* for Medium Size Laptop and Full Size Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-
+.checkout-body {
+    height: 100%;
+}
     /* checkout page start  */
     .checkout-details-section {
         width: 355px;
@@ -163,21 +195,17 @@
 
 /* For Big Size Screen More than 1200px */
 
-@media only screen and (min-width: 1201px) and (max-width: 1360px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+    
+    .checkout-body {
+        height: 100%;
+    }
 
-@media only screen and (min-width: 1200px) {
-  /* check out start  
-  .checkout-section {
-    margin: 0 auto;
-    max-width: 1180px;
-  }
+    .checkbox-head {
+        padding: 0px 22px;
+    }
 
-  .checkout-billing-form {
-    width: 558px;
-  }
-
-  .checkout-details-section {
-    width: 386px;
-  }
- check out end  */
+    .checkout-billing-form {
+        width: 650px !important;
+    }
 }
