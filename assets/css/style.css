@@ -6,23 +6,39 @@
 
 /* Root CSS :: Start */
 :root {
-  --primary-btn-color: #0b75f1;
+  --brand-100: #F3F8FE;
+  --brand-200: #E7F1FE;
+  --brand-300: #DAEAFD;
+  --brand-400: #B3D4FB;
+  --brand-500: #7BB4F7;
+  --brand-600: #0B75F1;
+  --brand-700: #0963CD;
+  --brand-800: #042954;
+  --brand-900: #031D3C;
+  --dash-bg: #fafcff;
+  --default: #fff;
+  --disable-text-color: #9C9CA4;
+  --btn-border-radius: 10px;
+  --border-property: 1px solid #0b75f1;
+  --global-background-color: #FAFCFF;
   --global-font-color: #000000;
   --global-dash-font: #9c9ca4;
+  --global-hover-color: #f0f7fe;
+  --global-bg-color: #f3f8fe;
   --primary-font-color: #0b75f1;
   --primary-font-color-1: #141522;
   --primary-font-family: Poppins;
-  --btn-border-radius: 10px;
-  --border-property: 1px solid #0b75f1;
-  --global-hover-color: #f0f7fe;
-  --global-bg-color: #f3f8fe;
-  --dash-bg: #fafcff;
+  --primary-btn-color: #0b75f1;
+  --primary-font-color: #031D3C;
+  --third-font-color: #8D8D8D;
+  --secondary-font-color: #686A79;
+  --primary-font-family: "Poppins", sans-serif;
 }
 
 /* Root CSS :: End */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font-family);
   background: var(--dash-bg);
   padding: 0;
   margin: 0;
@@ -34,13 +50,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Poppins;
-  color: #141522;
+  font-family: var(--primary-font-family);
+  color: var(--primary-font-color-1);
 }
 
 p {
   color: #2c2c2c;
-  font-family: Poppins;
+  font-family: var(--primary-font-family);
 }
 
 ul,
@@ -54,22 +70,34 @@ hr {
 }
 
 /* scrollbar start */
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 12px;
 }
 
-::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background-color: #f2f2f2;
-  /* border-radius: 8px;      */
+  border-radius: 8px;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #dce0e7;
-  /* border-radius: 8px; */
+*::-webkit-scrollbar-thumb {
+  background-color: #e6eaee;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #e6eaee;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--brand-500);
+  outline: .5px solid var(--brand-200);
 }
 
 /* scrollbar end */
-
 /* journals page start  */
 .journals {
   padding: 20px 52px;
@@ -290,11 +318,11 @@ hr {
 }
 
 .courses-row {
-    display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .course-card {
@@ -323,6 +351,7 @@ hr {
   color: #021123;
   font-size: 26px;
 }
+
 .course-card-info {
   display: flex;
   flex-direction: row;
@@ -331,6 +360,7 @@ hr {
   flex-wrap: nowrap;
   margin-top: 20px;
 }
+
 /* Course :: End */
 
 
@@ -562,6 +592,7 @@ hr {
 .best-selling-book {
   padding: 60px 30px;
 }
+
 /* My dashboard :: End */
 
 .swiper {
@@ -569,6 +600,7 @@ hr {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .swiper .swiper-slide {
   position: relative;
   width: 150px;
@@ -580,11 +612,13 @@ hr {
   /* background: linear-gradient(to right, #c31432, #240b36); */
   overflow: hidden;
 }
+
 .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .swiper .swiper-slide .info {
   width: 100%;
   position: absolute;
@@ -593,19 +627,24 @@ hr {
   padding: 15px;
   box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -120px black;
 }
+
 .swiper .swiper-slide .info h4 {
   margin: 0;
   padding-bottom: 10px;
 }
+
 .swiper .swiper-slide-active {
   filter: none;
 }
+
 .swiper .swiper-pagination-bullet-active {
   background-color: #c31432 !important;
 }
+
 .swiper .swiper-pagination-bullet {
   background-color: grey;
 }
+
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
   top: 50%;
@@ -619,28 +658,34 @@ hr {
   outline: 0;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
   font-size: 18px;
 }
+
 .swiper .swiper-button-prev:after {
   position: relative;
   left: -1px;
 }
+
 .swiper .swiper-button-next:after {
   position: relative;
   left: 1px;
 }
+
 .swiper .swiper-button-prev,
 .swiper .swiper-container-rtl .swiper-button-next {
   left: 10px;
   right: auto;
 }
+
 .swiper .swiper-button-next,
 .swiper .swiper-container-rtl .swiper-button-prev {
   right: 10px;
   left: auto;
 }
+
 .swiper .swiper-button-prev.swiper-button-disabled,
 .swiper .swiper-button-next.swiper-button-disabled {
   opacity: 0;
@@ -650,17 +695,18 @@ hr {
 
 /* browse Category :: Start */
 .browse-category {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 0px;
-    padding: 0px 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  padding: 0px 60px;
 }
 
 .browse-category .browse-books {
   border-radius: 10px;
 }
+
 .bc-card-header {
   display: flex;
   flex-direction: row;
@@ -669,20 +715,23 @@ hr {
   align-items: center;
   border-bottom: 1px solid #00000017;
 }
+
 .brws-books-card-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 55px;
-    grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 55px;
+  grid-row-gap: 0px;
 }
 
 .book-card-info {
   margin-top: 10px;
 }
+
 .book-card-info h1 {
   font-size: 22px;
 }
+
 .book-card-info p {
   color: #8D8D8D;
 }
@@ -801,17 +850,679 @@ a {
 .guides-section {
   padding: 30px;
 }
+
 .guides-collection {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 20px;
-grid-row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .dashboard .my-dashboard {
   padding: 0;
 }
+
 .dashboard main.dashboard-content-wrapper {
   padding: 0;
+}
+
+/* insights page start  */
+
+.insights {
+  padding: 20px;
+  background-color: #fafcff;
+}
+
+.insights h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 25px;
+}
+
+/* insights book section  */
+
+.insights-book-section {
+  width: 48%;
+  background-color: #fff;
+  height: 727px;
+  /* overflow-y: scroll; */
+  border-radius: 8px;
+}
+
+.insights-book-wrapper {
+  overflow-y: scroll;
+  height: 650px;
+  padding: 10px 45px;
+  margin: 20px 10px;
+}
+
+
+.insights-book-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.insights-book-wrapper::-webkit-scrollbar-track-piece {
+  width: 10px;
+}
+
+.insights-book-wrapper::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.insights-book-wrapper::-webkit-scrollbar-thumb {
+  background-color: #e6eaee;
+  border-radius: 8px;
+}
+
+.insights-book-section h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.insights-book-section h5::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #dce0e7;
+}
+
+.insights-book-section .insights-book-card {
+  padding: 20px;
+  margin: 20px 20px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 3.56554px 35.6554px rgba(0, 0, 0, 0.07);
+
+}
+
+.insights-book-section .insights-book-card img {
+  height: 97px;
+  width: 68px;
+  margin: 2px 28px 2px 2px;
+}
+
+.insights-book-section .insights-book-card h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.insights-book-section .insights-book-card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #8d8d8d;
+}
+
+/* insights cursor section  */
+
+.insights-course-section {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.insights-course-section h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.insights-course-section h5::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #dce0e7;
+}
+
+.insights-course-section .insights-course {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 10px;
+  margin: 20px 10px;
+  height: 615px;
+  overflow-y: scroll;
+}
+
+.insights-course-section .insights-course .insights-course-card {
+  padding: 14px 12px 16px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.insights-course-section .insights-course .insights-course-card h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.insights-course-section .insights-course .insights-course-card p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #8d8d8d;
+}
+
+.insights-course-section .insights-course .insights-course-card img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* insights page end  */
+/* forum main  page */
+.forum-main {
+  padding: 30px 24px 20px 30px;
+  background-color: #fafcff;
+}
+
+.forum-main .forum-main-all-forum {
+  width: 70%;
+  background-color: #fff;
+  padding: 24px 0;
+}
+
+.forum-main .forum-main-all-forum .forum-main-all-forum-item {
+  height: 704px;
+  overflow-y: scroll;
+  padding: 16px;
+}
+
+.forum-main .forum-main-all-forum .forum-card {
+  padding: 16px;
+}
+
+.forum-main .forum-main-all-forum .forum-card:hover {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background-color: #fafcff;
+  box-shadow: 3px 5px 5px hsl(100deg 10% 10% / 0.1);
+}
+
+.forum-main .forum-main-all-forum .forum-card h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.forum-main .forum-main-all-forum .forum-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #667085;
+}
+
+.forum-main .forum-main-all-forum .forum-card i {
+  margin-right: 12px;
+  margin-left: 25px;
+}
+
+.forum-main .forum-main-all-forum .forum-card .forum-publisher-profile {
+  margin-bottom: 12px;
+}
+
+.forum-main .forum-main-all-forum .forum-card .forum-publisher-profile img {
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.forum-main .forum-main-all-forum .forum-card .forum-publisher-profile p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8d8d8d;
+  margin-bottom: 0;
+}
+
+/* forum-main-rightbar */
+.forum-main .forum-main-rightbar {
+  width: 25%;
+  background-color: #fff;
+  padding: 26px 32px;
+  border-radius: 16px;
+}
+
+.forum-main .forum-main-rightbar hr {
+  margin: 30px 0 24px 0;
+  border: 1px solid;
+}
+
+.forum-main-rightbar .popular-forum-post h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.forum-main-rightbar .popular-forum-post .popular-forum-post-card {
+  margin-top: 24px;
+}
+
+.forum-main-rightbar .popular-forum-post .popular-forum-post-card img {
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.forum-main-rightbar .popular-forum-post .popular-forum-post-card h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.forum-main-rightbar .popular-forum-post .popular-forum-post-card p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8d8d8d;
+}
+
+.forum-main-rightbar .trending-topics h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.forum-main-rightbar .trending-topics p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 10px 16px;
+  background: rgba(240, 247, 254, 0.6);
+  border: 0.5px solid rgba(4, 41, 84, 0.6);
+  border-radius: 4px;
+  margin-top: 20px;
+  width: auto;
+}
+
+/* forum details page  */
+.forum-details {
+  background-color: #fafcff;
+  padding: 24px 28px;
+}
+
+.forum-details .forum-details-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.forum-details .forum-details-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #0b75f1;
+}
+
+.forum-details .forum-details-post {
+  width: 70%;
+  padding: 24px;
+  background-color: #fff;
+  height: 1294px;
+  overflow-y: scroll;
+}
+
+.forum-details .forum-details-post h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.forum-details .forum-details-post .forum-publisher-profile img {
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
+
+.forum-details .forum-details-post .forum-publisher-profile p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.forum-details .forum-details-post .forum-publisher-profile {
+  margin: 14px 0;
+}
+
+.forum-details .forum-details-post .forum-info {
+  margin: 14px 0 20px;
+}
+
+.forum-details .forum-details-post .forum-info p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .forum-info i {
+  margin: 0 10px 0 25px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .forum-description {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.forum-details .forum-details-post hr {
+  height: 0;
+  border: 1px solid #e6eaee;
+  margin: 21px 0;
+}
+
+.forum-details .forum-details-post .feedback {
+  padding: 14px 24px;
+  background-color: #fafcff;
+  /* padding: 14px; */
+  width: 49%;
+  border: 0;
+  margin-bottom: 21px;
+  border-radius: 4px;
+}
+
+.forum-details .forum-details-post .feedback i {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .feedback i:hover {
+  color: #0b75f1;
+}
+
+.forum-details .forum-details-post .feedback:hover {
+  background-color: #f0f7fe;
+}
+
+.forum-details .forum-details-post .forum-feedback-comment {
+  padding: 23px 24px;
+  border: 1px solid #f5f5f7;
+  border-radius: 8px;
+  margin-bottom: 21px;
+}
+
+.forum-details .forum-details-post .forum-feedback-comment p {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 32px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .forum-feedback-comment .comment-profile img {
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
+
+.forum-details .forum-details-post .forum-feedback-comment .comment-profile p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .add-comment-section {
+  padding: 24px 20px 16px 24px;
+  border: 1px solid #f5f5f7;
+  border-radius: 8px;
+  background-color: #fafcff;
+  margin: 21px 0;
+}
+
+.forum-details .forum-details-post .add-comment-section textarea {
+  border: 0;
+  height: 120px;
+  background-color: #fafcff;
+}
+
+.forum-details .forum-details-post .add-comment-section textarea:hover {
+  border: 0;
+}
+
+.forum-details .forum-details-post .add-comment-section textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #667085;
+}
+
+.forum-details .forum-details-post .add-comment-section button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #0b75f1;
+  background-color: #f0f7fe;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.forum-details .forum-details-post .add-comment-section button.active {
+  color: #fff;
+  background-color: #0b75f1;
+}
+
+/* forum-details-rightbar */
+.forum-details .forum-details-rightbar {
+  width: 25%;
+  background-color: #fff;
+  padding: 26px 32px;
+  border-radius: 16px;
+}
+
+.forum-details .forum-details-rightbar hr {
+  margin: 30px 0 24px 0;
+  border: 1px solid;
+}
+
+.forum-details-rightbar .popular-forum-post h2,
+.forum-details-rightbar .related-forum-post h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.forum-details-rightbar .popular-forum-post .popular-forum-post-card,
+.forum-details-rightbar .related-forum-post .related-forum-post-card {
+  margin-top: 24px;
+}
+
+.forum-details-rightbar .popular-forum-post .popular-forum-post-card img,
+.forum-details-rightbar .related-forum-post .related-forum-post-card img {
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.forum-details-rightbar .popular-forum-post .popular-forum-post-card h6,
+.forum-details-rightbar .related-forum-post .related-forum-post-card h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.forum-details-rightbar .popular-forum-post .popular-forum-post-card p,
+.forum-details-rightbar .related-forum-post .related-forum-post-card p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8d8d8d;
+}
+
+.forum-details-rightbar .trending-topics h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.forum-details-rightbar .trending-topics p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 10px 16px;
+  background: rgba(240, 247, 254, 0.6);
+  border: 0.5px solid rgba(4, 41, 84, 0.6);
+  border-radius: 4px;
+  margin-top: 20px;
+  width: auto;
+}
+
+ul.forum-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.forum-tags li a {
+  display: block;
+  padding: 6px 20px;
+  background: rgba(240, 247, 254, 0.6);
+  border: 0.5px solid #E4E4E7;
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--brand-900) !important;
+  transition: all linear .2s;
+}
+ul.forum-tags li a:hover {
+  background-color: var(--brand-700);
+  color: var(--default) !important;
+}
+ul.forum-tags li a.tag-active {
+  background-color: var(--brand-700);
+  color: var(--default) !important;
+}
+ul.forum-tags.m-0.p-0.slick-initialized.slick-slider li.forum-tag-item.slick-slide {
+  margin: 0px 10px;
+}
+.tag-slide-btn {
+  padding: 7px 15px;
+  border:  0.5px solid #042954;
+  border-radius: 4px;
+}
+
+.forum-tags .slick-list {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn-slider {
+  padding: 0px 25px;
+}
+.forum-post-card {
+  border-radius: 8px;
+  padding: 20px;
+  transition: all linear .3s;
+}
+.forum-post-card:hover {
+  background: #FAFCFF;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+}
+li.forum-post-card-wrap {
+  padding: 30px 0px;
+  position: relative;
+}
+li.forum-post-card-wrap::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #E6EAEE;
+}
+
+.forum-post-wrapper {
+  padding: 40px 40px 0px 40px;
+  overflow-y: scroll;
+  height: 700px;
+}
+
+.forum-publisher-info h5 {
+  margin: 0;
+}
+.forum-publisher-info p {
+  margin: 0;
+}
+
+.forum-publisher-profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.user_avtar {
+  margin-right: 20px;
+  position: relative;
+}
+.user_avtar::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+}
+.forum-post-info  {
+  margin-top: 15px;
+}
+.forum-post-info div {
+  margin: 0px 10px;
+}
+.forum-post-info div:nth-child(1) {
+  margin-left: 0;
+}
+.forum-post-info div i {
+  margin-right: 10px;
+}
+.user_avtar span {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+}
+.user_avtar span::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: #069706;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+ul.post-tag li a{
+  display: inline-block;
+  padding: 10px 15px;
+  background: rgba(240, 247, 254, 0.6);
+border: 0.5px solid rgba(4, 41, 84, 0.6);
+border-radius: 4px;
+margin-top: 10px;
+margin-bottom: 10px;
+font-weight: 600;
+color: var(--primary-font-color-1) !important;
 }

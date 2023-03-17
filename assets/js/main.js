@@ -22,7 +22,7 @@ $(document).ready(function () {
             $(".dash-main-left-inner").removeClass('hide-left-inner');
         }
     })
-    
+
     $(".sidebar_show_btn").click(function () {
         $(".dash-main-right").toggleClass('full-width');
         $(".dash-main-left").toggleClass('hideSidebar');
@@ -57,7 +57,7 @@ new YouTubeToHtml5({ withAudio: true });
             }
 
         });
-    }); 
+    });
 })(jQuery);
 
 
@@ -69,6 +69,9 @@ $('.btn-slider').slick({
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true
-  });
+});
+
+
+
 
 
