@@ -1695,3 +1695,133 @@ ul.post-tag li a {
 .journal-write-btn i {
   margin-right: 5px;
 }
+/* Guide Details page start */
+.guide-details {
+  background-color: #fafcff;
+}
+
+.guide-details-title {
+  margin: 16px 24px;
+}
+
+.guide-details-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.guide-details-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #0b75f1;
+}
+
+.guide-details-section {
+  /* height: 100%; */
+  /* width: 745px; */
+  width: 65%;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 19px;
+  height: 790px;
+  overflow-y: auto;
+}
+
+.guide-details-section img {
+  width: 100%;
+}
+
+.guide-details-section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #031d3c;
+  margin-top: 16px;
+}
+
+.guide-details-section .writer-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8d8d8d;
+  margin-bottom: 16px;
+}
+
+.guide-details-section p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #686a79;
+}
+
+.guide-details-quotation {
+  border-left: 2px solid #0b75f1;
+  padding-left: 20px;
+  margin: 12px 0;
+}
+
+.guide-details-quotation h5 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 32px;
+  color: #031d3c;
+}
+
+.guide-details-quotation p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8d8d8d;
+}
+
+/* guide-details-sitebar */
+.guide-details-sitebar {
+  height: 100%;
+  /* width: 363px; */
+  width: 30%;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #fff;
+  padding: 23px 32px;
+}
+
+.guide-details-sitebar .d-flex {
+  margin-bottom: 20px;
+}
+
+.guide-details-sitebar img {
+  width: 81px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.guide-details-sitebar hr {
+  height: 0;
+  border: 1px solid #e6eaee;
+}
+
+.guide-details-sitebar h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #141522;
+  margin-bottom: 24px;
+}
+
+.guide-details-sitebar h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #031d3c;
+}
+
+.guide-details-sitebar p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8d8d8d;
+}
+
+/* Guide Details page end */
