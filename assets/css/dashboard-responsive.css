@@ -1,8 +1,13 @@
-/* For Extra Small Device to 320px Device */
-@media only screen and (max-width: 319.5px) {}
+
 
 /* For Smartphone */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+    .write-journal .write-journal-file-upload {
+        text-align: center;
+    }
+    .write-journal .write-journal-file-upload label p {
+        font-size: 10px;
+    }
     .journal-btn {
         display: flex;
         flex-direction: row;
@@ -62,7 +67,7 @@
     }
 
     .dash-header-col-left h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .dash-header-col-left p {
