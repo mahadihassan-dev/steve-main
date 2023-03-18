@@ -773,16 +773,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .books-collection {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  align-items: center;
-  justify-items: center;
-  grid-column-gap: 75px;
-  grid-row-gap: 48px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+
+
 .books-collection .book {
-  width: 159.51px;
+  width: 13%;
+  margin: 0px 25px;
+  padding: 0px 15px;
 }
 
 /* modal start */
@@ -1648,6 +1650,7 @@ ul.post-tag li a {
   display: flex;
   width: 100%;
 }
+
 .forum-post {
   width: 75%;
 }
@@ -1658,4 +1661,37 @@ ul.post-tag li a {
 
 .page-breadcrumb {
   margin-bottom: 25px;
+}
+
+.journal-btn li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #f3f8fe;
+  color: #0b75f1;
+  border: 1px solid #0b75f1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  font-family: var(--primary-font-family);
+}
+.journal-btn li:nth-child(2) a {
+  color: var(--brand-100) !important;
+}
+.journal-write-btn {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #f3f8fe;
+  color: #0b75f1;
+  border: 1px solid #0b75f1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  font-family: var(--primary-font-family);
+}
+.journal-write-btn i {
+  margin-right: 5px;
 }

@@ -382,10 +382,11 @@
     margin: 20px 10px;
   }
 
-  .books-collection {
-    grid-column-gap: 0;
-    grid-row-gap: 48px;
-  }
+  .books-collection .book {
+    width: 100%;
+    margin: 0px 25px;
+    padding: 0px 15px;
+}
 
   .journals button {
     padding: 8px;
@@ -492,16 +493,11 @@
 
   /* log in end  */
   /* book page start  */
-  .books-collection {
-    grid-template-columns: auto auto;
-  }
+  
 
   /* book page end  */
 
-  /* guides page start  */
-  .guides-collection {
-    grid-template-columns: auto;
-  }
+  
 
   /* guides page end  */
   /* guides details page end  */
@@ -1123,6 +1119,7 @@
 
 /* For Big and Average Size Tab */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  
   .forum-post-info div {
     margin: 0px;
   }
@@ -1348,6 +1345,11 @@
     width: 100%;
     margin-top: 20px;
   }
+  .books-collection .book {
+    width: 25%;
+    margin: 0px 25px;
+    padding: 0px 15px;
+}
 }
 
 /* for Tab and Laptop Medium Size Screen */
@@ -1651,15 +1653,6 @@
 
   .insights-book-wrapper {
     padding: 10px 0px;
-  }
-
-  .books-collection {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: center;
-    justify-items: center;
-    grid-column-gap: 15px;
-    grid-row-gap: 48px;
   }
 
   .brws-books-card-wrapper {
