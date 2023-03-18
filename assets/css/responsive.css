@@ -289,47 +289,75 @@
 
 /* For Smartphone */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .tag-slide-btn {
+    padding: 5px 5px;
+    border: 0.5px solid #042954;
+    border-radius: 4px;
+  }
+
+  ul.forum-tags li a {
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  ul.forum-tags.m-0.p-0.slick-initialized.slick-slider li.forum-tag-item.slick-slide {
+    margin: 0px 5px;
+  }
+
+  .forum-post-wrapper {
+    padding: 30px 25px 0px 25px;
+  }
+
   .forum-post-info {
     flex-direction: column;
     align-items: flex-start !important;
-}
-.forum-post-info div {
-  margin: 0px;
-}
-.forum-publisher-info h5 {
-  margin: 0;
-  font-size: 16px;
-}
-.forum-publisher-info p {
-  margin: 0;
-  font-size: 12px;
-}
-.forum-post-card p {
-  font-size: 14px;
-}
+  }
+
+  .forum-post-info div {
+    margin: 0px;
+  }
+
+  .forum-publisher-info h5 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .forum-publisher-info p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .forum-post-card p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
   .insights-book-wrapper {
     overflow-y: scroll;
     height: 650px;
     padding: 10px 10px;
     margin: 20px 10px;
-}
+  }
+
   .books-collection {
     grid-column-gap: 0;
     grid-row-gap: 48px;
-}
+  }
 
   .journals button {
     padding: 8px;
     font-size: 12px;
-}
+  }
+
   .journals button i {
     margin-right: 5px;
-}
+  }
 
-.books-section {
-  margin: 0;
-  padding: 10px;
-}
+  .books-section {
+    margin: 0;
+    padding: 10px;
+  }
 
 
 
@@ -337,30 +365,32 @@
 
   main.dashboard-content-wrapper {
     padding: 0px !important;
-}
-.brws-books-card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-}
+  }
+
+  .brws-books-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+
   .my-dashboard {
     padding: 25px 0px 20px 0px;
     background-color: #fafcff;
-}
+  }
 
-.book-card-info h1 {
-  font-size: 12px;
-}
+  .book-card-info h1 {
+    font-size: 12px;
+  }
 
-.book-card-info p {
-  font-size: 12px;
-}
+  .book-card-info p {
+    font-size: 12px;
+  }
 
-.course-card-info h6 {
-  font-size: 12px;
-}
+  .course-card-info h6 {
+    font-size: 12px;
+  }
 
 
   .browse-category {
@@ -370,7 +400,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     padding: 15px;
-    }
+  }
 
 
   .courses-row {
@@ -701,11 +731,13 @@
   .forum-post-info div {
     margin: 0px;
   }
+
   .home-section {
     width: 100% !important;
     padding: 20px;
     margin: 45px auto;
   }
+
   /* home page start  */
   .home-bg-top {
     height: 773px;
@@ -726,7 +758,7 @@
 
   /* home page end  */
 
-  
+
 
   /* login form start */
   .login-bg img {
@@ -1052,44 +1084,47 @@
   .forum-post-info div {
     margin: 0px;
   }
+
   .my-dashboard {
     padding: 25px 4px 20px 0px;
     background-color: #fafcff;
-}
+  }
 
-.brws-books-card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-}
+  .brws-books-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
 
-.book-card-info h1 {
-  font-size: 14px;
-}
+  .book-card-info h1 {
+    font-size: 14px;
+  }
 
-.book-card-info p {
-  color: #8D8D8D;
-  font-size: 12px;
-}
+  .book-card-info p {
+    color: #8D8D8D;
+    font-size: 12px;
+  }
 
-.course-card-info h6 {
-  font-size: 12px;
-}
+  .course-card-info h6 {
+    font-size: 12px;
+  }
 
-.course-card-info p {
-  font-size: 12px;
-}
+  .course-card-info p {
+    font-size: 12px;
+  }
 
-main.dashboard-content-wrapper {
-  padding: 10px;
-}
+  main.dashboard-content-wrapper {
+    padding: 10px;
+  }
+
   .home-section {
     width: 100% !important;
     padding: 20px;
     margin: 45px auto;
   }
+
   /* home page start  */
   .home-bg-top {
     height: 577px;
@@ -1557,12 +1592,21 @@ main.dashboard-content-wrapper {
 
 /* for Medium Size Laptop and Full Size Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  
+  .forum-post-info {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  .forum-post-info div {
+    margin: 0;
+  }
+
   .forum-post-wrapper {
     padding: 30px 30px 0px 30px;
     overflow-y: scroll;
     height: 700px;
-}
+  }
+
   .insights-book-wrapper {
     padding: 10px 0px;
   }
@@ -1574,38 +1618,42 @@ main.dashboard-content-wrapper {
     justify-items: center;
     grid-column-gap: 15px;
     grid-row-gap: 48px;
-}
+  }
+
   .brws-books-card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 0px;
-}
-.book-card-info h1 {
-  font-size: 14px;
-}
+  }
 
-.course-card-info h6 {
-  font-size: 12px;
-}
-.course-card-info p {
-  font-size: 10px;
-}
+  .book-card-info h1 {
+    font-size: 14px;
+  }
 
-.my-dashboard {
-  padding: 25px 10px 20px 10px;
-  background-color: #fafcff;
-}
+  .course-card-info h6 {
+    font-size: 12px;
+  }
 
-main.dashboard-content-wrapper {
-  padding: 10px;
-}
+  .course-card-info p {
+    font-size: 10px;
+  }
 
-.book-card-info p {
-  color: #8D8D8D;
-  font-size: 12px;
-}
+  .my-dashboard {
+    padding: 25px 10px 20px 10px;
+    background-color: #fafcff;
+  }
+
+  main.dashboard-content-wrapper {
+    padding: 10px;
+  }
+
+  .book-card-info p {
+    color: #8D8D8D;
+    font-size: 12px;
+  }
+
   /* home page start  */
   .home-bg-top {
     height: 440px;
