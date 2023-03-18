@@ -292,7 +292,6 @@ body::-webkit-scrollbar-thumb {
   padding: 12px 24px;
   background-color: #f0f7fe;
   border: 1px solid #0b75f1;
-  margin-left: 24px;
   border-radius: 8px;
 }
 
@@ -1548,6 +1547,7 @@ ul.post-tag li a {
   font-size: 14px;
   margin: 0;
 }
+
 .popular-post-card {
   display: flex;
   flex-direction: row;
@@ -1555,12 +1555,14 @@ ul.post-tag li a {
   justify-content: flex-start;
   align-items: center;
 }
+
 .poplar-post-detail a {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   color: var(--brand-900) !important;
 }
+
 .poplar-post-detail p {
   margin: 0;
 }
@@ -1578,21 +1580,52 @@ ul.post-tag li a {
   left: 0;
   background-color: var(--dash-bg);
 }
+
 .forum-widget-card {
   padding: 25px 0px;
 }
+
 .forum-widget-card h5 {
   font-size: 16px;
 }
+
 .forum-main .forum-main-rightbar {
   padding: 20px 20px;
 }
+
 .poplar-post-detail a {
   font-size: 14px;
 }
+
 .poplar-post-detail p {
- font-size: 12px;
+  font-size: 12px;
 }
+
 .forum-post-info div {
   margin: 0px 5px;
+}
+
+.write-forum-post-category-wrapper .btn-slider {
+  padding: 0px;
+}
+
+.form-btn ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.form-btn {
+  margin-top: 25px;
+}
+.form-btn ul li {
+  margin: 0px 5px;
+}
+.form-btn ul li button {
+  padding: 10px 25px;
+  border: 0;
+}
+.form-btn ul li button.active-frm-btn {
+  background-color: var(--brand-700);
+  color: #fff;
 }
