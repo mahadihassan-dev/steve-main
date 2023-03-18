@@ -97,6 +97,22 @@ body::-webkit-scrollbar-thumb {
   outline: .5px solid var(--brand-200);
 }
 
+/* page breadcrumb :: start */
+.page-breadcrumb h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--brand-900);
+}
+
+.page-breadcrumb a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brand-700);
+  text-decoration: none !important;
+}
+
+/* page breadcrumb :: end */
+
 /* scrollbar end */
 /* journals page start  */
 .journals {
@@ -1181,11 +1197,6 @@ a {
   line-height: 36px;
 }
 
-.forum-details .forum-details-post .forum-publisher-profile img {
-  height: 32px;
-  width: 32px;
-  margin-right: 16px;
-}
 
 .forum-details .forum-details-post .forum-publisher-profile p {
   font-size: 14px;
@@ -1269,11 +1280,7 @@ a {
   color: #667085;
 }
 
-.forum-details .forum-details-post .forum-feedback-comment .comment-profile img {
-  height: 32px;
-  width: 32px;
-  margin-right: 16px;
-}
+
 
 .forum-details .forum-details-post .forum-feedback-comment .comment-profile p {
   font-size: 14px;
@@ -1618,14 +1625,37 @@ ul.post-tag li a {
 .form-btn {
   margin-top: 25px;
 }
+
 .form-btn ul li {
   margin: 0px 5px;
 }
+
 .form-btn ul li button {
   padding: 10px 25px;
   border: 0;
 }
+
 .form-btn ul li button.active-frm-btn {
   background-color: var(--brand-700);
   color: #fff;
+}
+
+.forum-details-section {
+  justify-content: space-between !important;
+}
+
+.forum-primary-layout {
+  display: flex;
+  width: 100%;
+}
+.forum-post {
+  width: 75%;
+}
+
+.forum-widget {
+  width: 25%;
+}
+
+.page-breadcrumb {
+  margin-bottom: 25px;
 }

@@ -5,25 +5,40 @@
 */
 
 /* For Extra Small Device to 320px Device */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .forum-details .forum-details-post .forum-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .forum-details .forum-details-post .forum-info div i {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
   .dash-header-col-left h3 {
     font-size: 18px;
   }
+
   .write-journal {
-    padding: 10px ;
-}
-.form-btn ul li button {
-  padding: 10px 15px;
-  border: 0;
-}
-.write-journal-title h2 {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 36px;
-}
-.write-journal-title p {
-  font-size: 12px;
-}
+    padding: 10px;
+  }
+
+  .form-btn ul li button {
+    padding: 10px 15px;
+    border: 0;
+  }
+
+  .write-journal-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .write-journal-title p {
+    font-size: 12px;
+  }
+
   /* home page start  */
   .home-bg-top {
     height: 477px;
@@ -305,7 +320,17 @@
 }
 
 /* For Smartphone */
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 360.5px) and (max-width: 479px) {
+  .forum-details .forum-details-post .forum-info {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .forum-details .forum-details-post .forum-info div i {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
   .tag-slide-btn {
     padding: 5px 5px;
     border: 0.5px solid #042954;
@@ -1952,6 +1977,11 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .forum-details .forum-details-post .feedback i {
+
+    font-size: 18px;
+
+  }
 
   /* login start */
   .login-bg img {
