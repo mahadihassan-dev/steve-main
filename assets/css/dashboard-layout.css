@@ -19,14 +19,34 @@
     --global-bg-color: #F3F8FE;
     --dash-bg: #fafcff;
     --global-color-2: #FF4D5E;
+    --brand-100: #F3F8FE;
+    --brand-200: #E7F1FE;
+    --brand-300: #DAEAFD;
+    --brand-400: #B3D4FB;
+    --brand-500: #7BB4F7;
+    --brand-600: #0B75F1;
+    --brand-700: #0963CD;
+    --brand-800: #042954;
+    --brand-900: #031D3C;
+    --dash-bg: #fafcff;
+    --default: #fff;
+    --disable-text-color: #9C9CA4;
+    --btn-border-radius: 10px;
+    --border-property: 1px solid #0b75f1;
+    --global-background-color: #FAFCFF;
+    --global-font-color: #000000;
+    --global-dash-font: #9c9ca4;
+    --global-hover-color: #f0f7fe;
+    --global-bg-color: #f3f8fe;
+    --primary-font-color: #0b75f1;
+    --primary-font-color-1: #141522;
+    --primary-font-family: Poppins;
+    --primary-btn-color: #0b75f1;
+    --primary-font-color-2: #031D3C;
+    --third-font-color: #8D8D8D;
+    --secondary-font-color: #686A79;
+    --primary-font-family: "Poppins", sans-serif;
 }
-
-/* Dash - layout */
-/* .dash-main {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-} */
 
 .sidebtn-mb button {
     display: none;
@@ -229,7 +249,7 @@ ul.side-nav li a {
     display: block;
     background: #fff;
     text-decoration: none;
-    color: var(--primary-font-color-1);
+    color: var(--global-dash-font) !important;
     font-weight: 600;
 }
 
@@ -237,10 +257,9 @@ ul.side-nav li a.active {
     padding: 10px 15px;
     display: block;
     text-decoration: none;
-    color: var(--primary-font-color-1);
+    color: var(--primary-font-color) !important;
     background-color: var(--global-hover-color);
     border-radius: var(--btn-border-radius);
-    color: var(--primary-font-color);
 }
 
 ul.side-nav li a i {
@@ -250,11 +269,11 @@ ul.side-nav li a i {
 ul.side-nav li a:hover {
     background-color: var(--global-hover-color);
     border-radius: var(--btn-border-radius);
-    color: var(--primary-font-color);
+    color: var(--primary-font-color) !important;
 }
 
 .sidebar-logout {
-    margin-top: 335px;
+    margin-top: 355px;
 }
 
 .sidebar-logout a.dash-logout {
@@ -270,8 +289,8 @@ ul.side-nav li a:hover {
 }
 
 .sidebar-logout a.dash-logout:hover {
-    background: var(--global-color-2);
-    color: var(--global-bg-color);
+    background: #FF4D5E;
+    color: #fff !important;
 }
 
 .sidebar-logout a.dash-logout i {
