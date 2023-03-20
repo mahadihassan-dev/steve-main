@@ -41,7 +41,10 @@ $(document).ready(function () {
 
 // home video
 
-new YouTubeToHtml5({ withAudio: true });
+new YouTubeToHtml5({ 
+    selector: '',
+    withAudio: true 
+});
 
 // home video button
 
@@ -61,17 +64,10 @@ new YouTubeToHtml5({ withAudio: true });
 })(jQuery);
 
 
-
-
-$('.btn-slider').slick({
+jQuery('.btn-slider').slick({
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true
 });
-
-
-
-
-
