@@ -1,0 +1,69 @@
+  <!-- Main Section :: Start -->
+  <main id="home" class="swiper mySwiper">
+    <div id="fullpage" class="swiper-wrapper section_slider-tray">
+      <!-- Section Slide - one :: Start -->
+      <section class="section-slide">
+        <div class="container">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <h2>iManifesting System - slide 1</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Slide - one :: End -->
+      <!-- Section Slide - two :: Start -->
+      <section class="swiper-slide section-slide">
+        <div class="container">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <h2>iManifesting System - slide 2</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Slide - two :: End -->
+      <!-- Section Slide - three :: Start -->
+      <section class="swiper-slide section-slide">
+        <div class="container">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <h2>iManifesting System - slide 3</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Slide - three :: End -->
+    </div>
+  </main>
+  <!-- Main Section :: End -->
