@@ -82,8 +82,9 @@
   <script src="assets/plugins/jQuery/jquery-3.6.3.slim.js"></script>
   <script src="assets/plugins/slick-slider/slick.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    // Slick Slider
+  
+  <!-- <script>
+    
     jQuery(".section_slider-tray").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -108,7 +109,35 @@
       });
     });
 
-// https://codepen.io/vone8/
+
+  </script> -->
+  <script>
+    var $slider = $(".section_slider-tray");
+
+$slider
+	.on("init", function() {
+		mouseWheel($slider);
+	})
+	.slick({
+		dots: false,
+		vertical: true,
+		infinite: true,
+		arrows: false
+	});
+
+function mouseWheel($slider) {
+	$(window).on("wheel", { $slider: $slider }, mouseWheelHandler);
+}
+
+function mouseWheelHandler(event) {
+	var $slider = event.data.$slider;
+	var delta = event.originalEvent.deltaY;
+	if (delta > 0) {
+		$slider.slick("slickPrev");
+	} else {
+		$slider.slick("slickNext");
+	}
+}
   </script>
 </body>
 
