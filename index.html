@@ -34,6 +34,71 @@
   <div class="swiper mySwiper">
     <div class="swiper-wrapper slide-lists">
 
+
+      <!-- Slide - One :: | Welcome | Start -->
+      <div class="swiper-slide slide-item">
+        <div class="section-slide">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <a href="#"><img src="assets/images/logo/logo.png" alt="site logo; primary logo" class="w-auto"></a>
+                <h2>iManifesting System - slide 1</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide - One :: | Welcome | End -->
+      <!-- Slide - Two :: | About | Start -->
+      <div class="swiper-slide slide-item">
+        <div class="section-slide">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <h2>iManifesting System - slide 2</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide - Two :: | About | End -->
+      <!-- Slide - thee :: | Video | Start -->
+      <div class="swiper-slide slide-item">
+        <div class="section-slide">
+          <div class="section-slide-row">
+            <div class="slide-col">
+              <div class="slide-content slide-content-left">
+                <h2>iManifesting System - slide 3</h2>
+                <p>I've been cracked the secret. I will teach you</p>
+                <p>Are you willing to join us Right now?</p>
+                <a href="#getstart">Get Start</a>
+              </div>
+            </div>
+            <div class="slide-col">
+              <div class="slide-content slide-content-right">
+                <img src="assets/images/steve.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slide - thee :: | Video | End -->
       <!-- Slide - four :: | Pricing | Start -->
       <div class="swiper-slide slide-item">
         <div class="section-slide">
@@ -157,69 +222,6 @@
         </div>
       </div>
       <!-- Slide - four :: | Pricing | End -->
-      <!-- Slide - One :: | Welcome | Start -->
-      <div class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-slide-row">
-            <div class="slide-col">
-              <div class="slide-content slide-content-left">
-                <h2>iManifesting System - slide 1</h2>
-                <p>I've been cracked the secret. I will teach you</p>
-                <p>Are you willing to join us Right now?</p>
-                <a href="#getstart">Get Start</a>
-              </div>
-            </div>
-            <div class="slide-col">
-              <div class="slide-content slide-content-right">
-                <img src="assets/images/steve.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide - One :: | Welcome | End -->
-      <!-- Slide - Two :: | About | Start -->
-      <div class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-slide-row">
-            <div class="slide-col">
-              <div class="slide-content slide-content-left">
-                <h2>iManifesting System - slide 2</h2>
-                <p>I've been cracked the secret. I will teach you</p>
-                <p>Are you willing to join us Right now?</p>
-                <a href="#getstart">Get Start</a>
-              </div>
-            </div>
-            <div class="slide-col">
-              <div class="slide-content slide-content-right">
-                <img src="assets/images/steve.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide - Two :: | About | End -->
-      <!-- Slide - thee :: | Video | Start -->
-      <div class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-slide-row">
-            <div class="slide-col">
-              <div class="slide-content slide-content-left">
-                <h2>iManifesting System - slide 3</h2>
-                <p>I've been cracked the secret. I will teach you</p>
-                <p>Are you willing to join us Right now?</p>
-                <a href="#getstart">Get Start</a>
-              </div>
-            </div>
-            <div class="slide-col">
-              <div class="slide-content slide-content-right">
-                <img src="assets/images/steve.png" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide - thee :: | Video | End -->
 
     </div>
     <div class="swiper-pagination"></div>
@@ -248,7 +250,8 @@
         clickable: true,
       },
     });
-    // Slick Card
+
+    // Pricing Slider Card : This Slide will active depends on device breakpoint.
     $('.pricing-row').slick({
       dots: false,
       infinite: false,
@@ -260,8 +263,8 @@
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 2,
+            slidesToScroll: 2,
             infinite: true,
             dots: true
           }
@@ -269,19 +272,61 @@
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         },
         {
           breakpoint: 480,
           settings: {
+            arrows: true,
+            nextArrow: '<i class="bi bi-arrow-right-short slide-arrow-btn slide-arrow-nxt-btn"></i>',
+            prevArrow: '<i class="bi bi-arrow-left-short slide-arrow-btn slide-arrow-prev-btn"></i>',
             slidesToShow: 1,
             slidesToScroll: 1
           }
         }
       ]
     });
+
+    // Section Common Slider : This Slider is Only for Sections, When Device Breakpoint is lower it will start working regarding Breakpoint.
+    $('.section-slide-row').slick({
+      dots: false,
+      infinite: false,
+      arrows: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            nextArrow: '<i class="bi bi-arrow-right-short slide-arrow-btn slide-arrow-nxt-btn"></i>',
+            prevArrow: '<i class="bi bi-arrow-left-short slide-arrow-btn slide-arrow-prev-btn"></i>',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    });
+
   </script>
 
 </body>
