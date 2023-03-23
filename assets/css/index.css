@@ -110,6 +110,15 @@
     width: 50%;
 }
 
+/* Video Section Start */
+.promo-video-col iframe {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* Pricing Slide :: Start */
+
 .pricing-row {
     width: 100%;
     display: flex;
