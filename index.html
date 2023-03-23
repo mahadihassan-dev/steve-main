@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/home-page.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.css" />
   <link rel="stylesheet" href="assets/plugins/slick-slider/slick.css">
+  <link rel="stylesheet" href="assets/plugins/venobox/venobox.css">
   <link rel="stylesheet" href="assets/vendor/normalize-css/normalize.css">
   <!-- Vendor CSS -->
   <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.0/css/bootstrap.css">
@@ -30,7 +31,22 @@
 
 <body class="home">
 
-  <header id="primary-header" class="primary-header"></header>
+  <header id="primary-header" class="primary-header">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-col">
+          <div class="header-logo">
+            <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="header-col">
+          <div class="header-nav">
+            <a href="login.html" class="header-btn">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -38,7 +54,7 @@
 
 
       <!-- Slide - One :: | Video | Start -->
-      <div class="swiper-slide slide-item">
+      <div id="video-intro" class="swiper-slide slide-item">
         <div class="section-slide">
           <div class="section-slide-row">
             <div class="slide-col">
@@ -51,7 +67,9 @@
             </div>
             <div class="slide-col promo-video-col">
               <div class="slide-content slide-content-right">
-                <iframe src="https://www.youtube.com/embed/ssGNpHibSJ4" title="Promo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a href="https://www.youtube.com/embed/ssGNpHibSJ4" class="yt-player" data-autoplay="true" data-vbtype="video">
+                  <img src="assets/images/image (1).jpg" alt="">
+                </a>
               </div>
             </div>
           </div>
@@ -81,7 +99,7 @@
         </div>
       </div>
       <!-- Slide - One :: | Welcome | End -->
-      
+
       <!-- Slide - thee :: | Video | Start -->
       <div class="swiper-slide slide-item">
         <div class="section-slide">
@@ -232,12 +250,17 @@
   </div>
 
   <script src="assets/plugins/jQuery/jquery-3.6.3.slim.js"></script>
+  <script src="assets/plugins/venobox/venobox.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js"></script>
   <script src="assets/plugins/slick-slider/slick.min.js"></script>
   <script src="assets/vendor/bootstrap-5.3.0/js/bootstrap.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
+    new VenoBox({
+      selector: ".yt-player",
+      maxWidth: "800px",
+    });
     var swiper = new Swiper(".mySwiper", {
       direction: "vertical",
       speed: 400,
