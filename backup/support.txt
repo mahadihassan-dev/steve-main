@@ -67,3 +67,34 @@
     </div>
   </main>
   <!-- Main Section :: End -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.slide-content.slide-content-left h2 {
+    font-size: 46px;
+}
+
+a.yt-player i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 66px;
+    color: var(--brand-600);
+}
+a.yt-player img {
+    width: 100%;
+    border-radius: var(--global-border-radius);
+    box-shadow: 0px 0px 100px -40px #0000003b;
+}
