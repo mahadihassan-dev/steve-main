@@ -36,6 +36,8 @@
     --s-m-container: 100%;
 }
 
+/* Index Header :: Start */
+
 #primary-header {
     width: 100%;
     position: fixed;
@@ -79,6 +81,7 @@
     color: var(--brand-100);
     border-radius: var(--btn-border-radius);
 }
+/* Index Header :: End */
 
 /* Section Slide :: Start */
 
@@ -475,6 +478,15 @@ a.buy-btn:hover {
 
 /* For Smartphone */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+    div#video-intro {
+        padding: 125px 10px;
+    }
+    .slide-item::before {
+        display: none;
+    }
+    .slide-item::after {
+        display: none;
+    }
     .pricing-card {
         display: flex;
         width: 100%;
@@ -492,7 +504,7 @@ a.buy-btn:hover {
         font-size: 14px;
     }
     .slide-content.slide-content-left h2 {
-        font-size: 36px;
+        font-size: 22px;
     }
     a.hero-btn {
         display: inline-block;
@@ -548,7 +560,7 @@ a.buy-btn:hover {
     a.yt-player {
         display: block;
         width: 100%;
-        height: 295px;
+        height: 165px;
         position: relative;
         border-radius: var(--btn-border-radius);
         margin: 0 auto;
@@ -623,7 +635,8 @@ a.buy-btn:hover {
         width: 100% !important;
     }
     .pricing-row.slick-initialized.slick-slider .slick-track {
-        width: 736px !important;
+        /* width: 50% !important; */
+        /* width: 736px !important; */
         /* margin: 0 auto !important; */
     }
 }

@@ -13,8 +13,6 @@
   <!-- <link rel="stylesheet" href="assets/css/dashboard-layout.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/dashboard-responsive.css"> -->
   <link rel="stylesheet" href="assets/css/home-page.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.css" />
-  <link rel="stylesheet" href="assets/plugins/slick-slider/slick.css">
   <link rel="stylesheet" href="assets/plugins/venobox/venobox.css">
   <link rel="stylesheet" href="assets/vendor/normalize-css/normalize.css">
   <!-- Vendor CSS -->
@@ -31,6 +29,7 @@
 
 <body class="home">
 
+  <!-- Header :: Start -->
   <header id="primary-header" class="primary-header">
     <div class="header-container">
       <div class="header-row">
@@ -47,147 +46,139 @@
       </div>
     </div>
   </header>
+  <!-- Header :: Start -->
 
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper slide-lists">
-
-      <!-- Slide - One :: | Video | Start -->
-      <div id="video-intro" class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-slide-row">
-            <div class="slide-col">
-              <div class="slide-content slide-content-left">
-                <h2>iManifesting System</h2>
-                <p>Escape depression, unlock new knowledge - one book, one course at a time</p>
-                <p>Are you willing to join us Right now?</p>
-                <a href="#pricing" class="hero-btn">Get Start</a>
-              </div>
-            </div>
-            <div class="slide-col promo-video-col">
-              <div class="slide-content slide-content-right">
-                <a href="https://www.youtube.com/embed/ssGNpHibSJ4" class="yt-player" data-autoplay="true"
-                  data-vbtype="video">
-                  <img src="assets/images/video-bg.jpg" alt="">
-                  <i class="bi bi-play-circle"></i>
-                </a>
-              </div>
-            </div>
+  <!-- Slide - One :: | Video | Start -->
+  <div id="video-intro" class="swiper-slide slide-item">
+    <div class="section-slide">
+      <div class="section-slide-row">
+        <div class="slide-col">
+          <div class="slide-content slide-content-left">
+            <h2>iManifesting System</h2>
+            <p>Escape depression, unlock new knowledge - one book, one course at a time</p>
+            <p>Are you willing to join us Right now?</p>
+            <a href="#pricing" class="hero-btn">Get Start</a>
+          </div>
+        </div>
+        <div class="slide-col promo-video-col">
+          <div class="slide-content slide-content-right">
+            <a href="https://www.youtube.com/embed/ssGNpHibSJ4" class="yt-player" data-autoplay="true"
+              data-vbtype="video">
+              <img src="assets/images/video-bg.jpg" alt="">
+              <i class="bi bi-play-circle"></i>
+            </a>
           </div>
         </div>
       </div>
-      <!-- Slide - One :: | Video | End -->
-
-      <!-- Slide - One :: | Welcome | Start -->
-      <div class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-slide-row">
-            <div class="slide-col">
-              <div class="slide-content about-desc">
-                <h2>About Me</h2>
-                <p>Meet Steven Zee, a professional trainer with over a decade of experience in personal and professional
-                  development. With expertise in leadership, communication, team building, and personal development,
-                  Steven creates customized training programs that meet the unique needs of each client. His holistic
-                  approach considers all aspects of an individual's well-being and empowers clients to achieve their
-                  goals with ongoing support and guidance. Unlock your full potential and manifest your dreams with
-                  Steven Zee as your trainer.</p>
-              </div>
-            </div>
-            <div class="slide-col">
-              <div class="slide-content about-img">
-                <img src="assets/images/big-steve.jpeg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slide - One :: | Welcome | End -->
-
-      <!-- Slide - four :: | Pricing | Start -->
-      <div id="pricing" class="swiper-slide slide-item">
-        <div class="section-slide">
-          <div class="section-title">
-            <h1>Our Pricing</h1>
-          </div>
-          <div class="pricing-row">
-            <div class="pricing-col">
-              <div class="pricing-card">
-                <span class="offer-tag">10% Off - for Today</span>
-                <div class="pricing-card-header">
-                  <!-- <span class="popular-tag">Most Popular</span> -->
-                  <span class="package-type silver-package">Silver</span>
-                  <p><i class="bi bi-currency-dollar"></i>88.88</p>
-                  <span>Per Person, Per Month</span>
-                </div>
-                <div class="pricing-card-services">
-                  <ul class="m-0 p-0">
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Courses</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Video</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Videos</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium PDF Books</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Global Community</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Exclusive Journal Portal</p>
-                    </li>
-                  </ul>
-                </div>
-                <a href="checkout.html" class="buy-btn">Buy Now</a>
-              </div>
-            </div>
-            <div class="pricing-col ">
-              <div class="pricing-card">
-                <span class="offer-tag">10% Off - for Today</span>
-                <div class="pricing-card-header">
-                  <!-- <span class="popular-tag">Exclusive</span> -->
-                  <span class="package-type gold-package">Gold</span>
-                  <p><i class="bi bi-currency-dollar"></i>88.88</p>
-                  <span>Per Person, Per Month</span>
-                </div>
-                <div class="pricing-card-services">
-                  <ul class="m-0 p-0">
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Courses</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Video</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Videos</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium PDF Books</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Global Community</p>
-                    </li>
-                    <li>
-                      <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Exclusive Journal Portal</p>
-                    </li>
-                  </ul>
-                </div>
-                <a href="checkout.html" class="buy-btn">Buy Now</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- Slide - four :: | Pricing | End -->
-
-
     </div>
-    <div class="swiper-pagination"></div>
   </div>
+  <!-- Slide - One :: | Video | End -->
+
+  <!-- Slide - One :: | Welcome | Start -->
+  <div class="swiper-slide slide-item">
+    <div class="section-slide">
+      <div class="section-slide-row">
+        <div class="slide-col">
+          <div class="slide-content about-desc">
+            <h2>About Me</h2>
+            <p>Meet Steven Zee, a professional trainer with over a decade of experience in personal and professional
+              development. With expertise in leadership, communication, team building, and personal development,
+              Steven creates customized training programs that meet the unique needs of each client. His holistic
+              approach considers all aspects of an individual's well-being and empowers clients to achieve their
+              goals with ongoing support and guidance. Unlock your full potential and manifest your dreams with
+              Steven Zee as your trainer.</p>
+          </div>
+        </div>
+        <div class="slide-col">
+          <div class="slide-content about-img">
+            <img src="assets/images/big-steve.jpeg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Slide - One :: | Welcome | End -->
+
+  <!-- Slide - four :: | Pricing | Start -->
+  <div id="pricing" class="swiper-slide slide-item">
+    <div class="section-slide">
+      <div class="section-title">
+        <h1>Our Pricing</h1>
+      </div>
+      <div class="pricing-row">
+        <div class="pricing-col">
+          <div class="pricing-card">
+            <span class="offer-tag">10% Off - for Today</span>
+            <div class="pricing-card-header">
+              <!-- <span class="popular-tag">Most Popular</span> -->
+              <span class="package-type silver-package">Silver</span>
+              <p><i class="bi bi-currency-dollar"></i>88.88</p>
+              <span>Per Person, Per Month</span>
+            </div>
+            <div class="pricing-card-services">
+              <ul class="m-0 p-0">
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Courses</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Video</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Videos</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium PDF Books</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Global Community</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Exclusive Journal Portal</p>
+                </li>
+              </ul>
+            </div>
+            <a href="checkout.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="pricing-col ">
+          <div class="pricing-card">
+            <span class="offer-tag">10% Off - for Today</span>
+            <div class="pricing-card-header">
+              <!-- <span class="popular-tag">Exclusive</span> -->
+              <span class="package-type gold-package">Gold</span>
+              <p><i class="bi bi-currency-dollar"></i>88.88</p>
+              <span>Per Person, Per Month</span>
+            </div>
+            <div class="pricing-card-services">
+              <ul class="m-0 p-0">
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Courses</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Video</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium Videos</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> All Exclusive Premium PDF Books</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Global Community</p>
+                </li>
+                <li>
+                  <p class="m-0 p-0"><i class="bi bi-check-circle-fill"></i> Exclusive Journal Portal</p>
+                </li>
+              </ul>
+            </div>
+            <a href="checkout.html" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Slide - four :: | Pricing | End -->
 
   <footer id="footer">
     <div class="footer-container">
@@ -205,120 +196,13 @@
             </ul>
           </div>
         </div>
-        <div class="footer-col">
-          <div class=""></div>
-        </div>
       </div>
     </div>
   </footer>
 
   <script src="assets/plugins/jQuery/jquery-3.6.3.slim.js"></script>
   <script src="assets/plugins/venobox/venobox.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js"></script>
-  <script src="assets/plugins/slick-slider/slick.min.js"></script>
   <script src="assets/vendor/bootstrap-5.3.0/js/bootstrap.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    new VenoBox({
-      selector: ".yt-player",
-      maxWidth: "800px",
-    });
-    var swiper = new Swiper(".mySwiper", {
-      direction: "vertical",
-      speed: 400,
-      slidesPerView: 1,
-      spaceBetween: 0,
-      mousewheel: true,
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-    // Pricing Slider Card : This Slide will active depends on device breakpoint.
-    $('.pricing-row').slick({
-      dots: false,
-      infinite: false,
-      arrows: false,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            nextArrow: '<i class="bi bi-arrow-right-short slide-arrow-btn slide-arrow-nxt-btn"></i>',
-            prevArrow: '<i class="bi bi-arrow-left-short slide-arrow-btn slide-arrow-prev-btn"></i>',
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-
-    // Section Common Slider : This Slider is Only for Sections, When Device Breakpoint is lower it will start working regarding Breakpoint.
-    $('.section-slide---row').slick({
-      dots: false,
-      infinite: false,
-      arrows: false,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            nextArrow: '<i class="bi bi-arrow-right-short slide-arrow-btn slide-arrow-nxt-btn"></i>',
-            prevArrow: '<i class="bi bi-arrow-left-short slide-arrow-btn slide-arrow-prev-btn"></i>',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        }
-      ]
-    });
-
-  </script>
-
 </body>
 
 </html>
