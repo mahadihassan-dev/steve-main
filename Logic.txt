@@ -1,0 +1,12 @@
+Video Will no have any Control > Except Play Pause Volume > must Run 15mints Before Scroll.
+
+container : 1450px
+
+Landing,
+
+>> About, Pricing Card, Optimize, 
+
+>>>> User
+
+> 
+

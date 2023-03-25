@@ -62,11 +62,14 @@
         </div>
         <div class="slide-col promo-video-col">
           <div class="slide-content slide-content-right">
-            <a href="https://www.youtube.com/embed/ssGNpHibSJ4" class="yt-player" data-autoplay="true"
+            <iframe src="https://www.youtube.com/embed/ssGNpHibSJ4" title="Promo Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <!-- <a href="https://www.youtube.com/embed/ssGNpHibSJ4" class="yt-player" data-autoplay="true"
               data-vbtype="video">
               <img src="assets/images/video-bg.jpg" alt="">
               <i class="bi bi-play-circle"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -210,8 +213,12 @@
   <script src="assets/plugins/jQuery/jquery-3.6.3.slim.js"></script>
   <script src="assets/plugins/venobox/venobox.js"></script>
   <script src="assets/vendor/bootstrap-5.3.0/js/bootstrap.js"></script>
-  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/main.js"></script>
   <script>
+    new VenoBox({
+      selector: ".yt-player",
+      maxWidth: "800px",
+    });
     window.onscroll = () => {
       toggleTopButton();
     }

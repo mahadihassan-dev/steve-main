@@ -1,5 +1,29 @@
+/*
+Theme Name: iManifest
+Theme URI: https://imanifest.netlify.app
+Author: BdCalling IT
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 6.0
+Tested up to: 5.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iManifest
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 * {
     font-family: var(--primary-font-family);
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 :root {
@@ -44,7 +68,7 @@
     top: 20px;
     left: 0;
     z-index: 999;
-    
+
 }
 
 .header-container {
@@ -81,24 +105,32 @@
     color: var(--brand-100);
     border-radius: var(--btn-border-radius);
 }
+
 /* Index Header :: End */
 
 /* Video :: Start */
 
-.section-wrapper {
-    padding: 200px 0px;
+.promo-video-col iframe {
+    width: 100%;
+    height: 400px;
 }
-.slide-item::after {
+
+.section-wrapper {
+    padding: 280px 0px;
+    position: relative;
+}
+
+.section-wrapper::after {
     position: absolute;
     content: url(/assets/images/bg-vector/test-vector-4\ .png);
     width: 100%;
     height: 100%;
     top: -5px;
-    left: -285px;
+    /* left: -285px; */
     z-index: -1;
 }
 
-.slide-item::before {
+.section-wrapper::before {
     position: absolute;
     content: url(/assets/images/bg-vector/test-vector-4\ .png);
     width: 100%;
@@ -184,15 +216,18 @@ a.yt-player i {
 .about-desc {
     text-align: left;
 }
+
 .about-desc h2 {
     margin-bottom: 15px;
 }
+
 .about-img img {
     width: 400px;
     height: 400px;
     margin: 0 auto;
     border-radius: var(--global-border-radius);
 }
+
 /* About :: End */
 
 .slide-content.slide-content-left h2 {
@@ -207,6 +242,7 @@ a.yt-player i {
     font-size: 66px;
     color: var(--brand-600);
 }
+
 a.yt-player img {
     width: 100%;
     border-radius: var(--global-border-radius);
@@ -471,6 +507,12 @@ a.buy-btn:hover {
 
 /* For Smartphone */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    .section-wrapper::before,
+    .section-wrapper::after {
+        display: none;
+    }
+
     a.yt-player i {
         position: absolute;
         top: 50%;
@@ -479,22 +521,27 @@ a.buy-btn:hover {
         font-size: 66px;
         color: var(--brand-600);
     }
+
     .header-row {
         padding: 0px 25px;
     }
+
     .section-wrapper {
         padding: 110px 0px;
     }
+
     div#video-intro {
         padding: 125px 10px;
     }
-    
+
     .slide-item::before {
         display: none;
     }
+
     .slide-item::after {
         display: none;
     }
+
     .pricing-card {
         display: flex;
         width: 100%;
@@ -508,12 +555,15 @@ a.buy-btn:hover {
         padding: 10px;
         border-radius: var(--global-border-radius);
     }
+
     .slide-content.slide-content-left p {
         font-size: 14px;
     }
+
     .slide-content.slide-content-left h2 {
         font-size: 22px;
     }
+
     a.hero-btn {
         display: inline-block;
         padding: 10px 20px;
@@ -523,9 +573,11 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 14px;
     }
+
     .slide-content.slide-content-left {
         margin-bottom: 20px;
     }
+
     .offer-tag {
         position: absolute;
         display: block;
@@ -544,9 +596,11 @@ a.buy-btn:hover {
     .pricing-card span {
         font-size: 11px;
     }
+
     .pricing-card-header::after {
         display: none;
     }
+
     .pricing-card-header::before {
         position: absolute;
         content: '';
@@ -555,6 +609,7 @@ a.buy-btn:hover {
         width: 100%;
         border-bottom: 1px solid #e6e9ed;
     }
+
     a.buy-btn {
         width: 100%;
         padding: 5px 0px;
@@ -563,10 +618,12 @@ a.buy-btn:hover {
         margin-top: 15px;
         text-align: center;
     }
+
     .header-container {
         width: var(--s-m-container);
         margin: 0 auto;
     }
+
     a.yt-player {
         display: block;
         width: 100%;
@@ -575,6 +632,7 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         margin: 0 auto;
     }
+
     .section-slide {
         width: 100%;
     }
@@ -617,6 +675,7 @@ a.buy-btn:hover {
         justify-content: center;
         padding: 10px 10px;
     }
+
     .pricing-card-header {
         background-color: var(--brand-100);
         padding: 0px 20px;
@@ -625,14 +684,17 @@ a.buy-btn:hover {
         margin-bottom: 20px;
         text-align: center;
     }
+
     .pricing-card-header p {
         margin: 10px 0px 0px 0px;
         font-size: 26px;
         font-weight: 600;
     }
+
     .pricing-card-services ul li p {
         font-size: 12px;
     }
+
     .pricing-card-services {
         padding: 0px 20px;
         width: 100%;
@@ -645,11 +707,13 @@ a.buy-btn:hover {
     .pricing-col {
         width: 100% !important;
     }
+
     .pricing-row.slick-initialized.slick-slider .slick-track {
         /* width: 50% !important; */
         /* width: 736px !important; */
         /* margin: 0 auto !important; */
     }
+
     .footer-container {
         width: var(--s-m-container);
     }
@@ -660,6 +724,7 @@ a.buy-btn:hover {
     .header-container {
         width: var(--s-m-container);
     }
+
     .header-nav a {
         display: inline-block;
         text-decoration: none;
@@ -669,9 +734,11 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     .section-slide {
         width: var(--s-m-container);
     }
+
     .section-slide-row {
         display: flex;
         flex-direction: column;
@@ -682,16 +749,20 @@ a.buy-btn:hover {
         width: 100%;
         height: 100%;
     }
+
     .slide-col {
         width: 100%;
         padding: 15px;
     }
+
     .slide-content.slide-content-left h2 {
         font-size: 32px;
     }
+
     .slide-content.slide-content-left p {
         font-size: 14px;
     }
+
     a.hero-btn {
         display: inline-block;
         padding: 10px 20px;
@@ -701,27 +772,32 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     a.yt-player {
         display: block;
         width: 80%;
-        height:  80%;
+        height: 80%;
         position: relative;
         border-radius: var(--btn-border-radius);
         margin: 0 auto;
     }
+
     .slide-content.about-desc p {
         font-size: 12px;
         text-align: justify;
     }
+
     .about-img img {
         width: 50%;
         height: 50%;
         margin: 0 auto;
         border-radius: var(--global-border-radius);
     }
+
     .pricing-col {
         width: 100% !important;
     }
+
     .pricing-row {
         width: 100%;
         display: flex;
@@ -731,28 +807,35 @@ a.buy-btn:hover {
         align-items: center;
         padding: 0px 15px;
     }
+
     .pricing-card-header {
         background-color: var(--brand-100);
         padding: 0px 20px;
         width: 40%;
     }
+
     .pricing-col.middle {
         margin-top: 30px;
     }
+
     .pricing-card-header p {
         margin: 20px 0px 20px 0px;
         font-size: 32px;
         font-weight: 600;
     }
+
     .pricing-card-header span {
         font-size: 14px;
     }
+
     .pricing-card-services ul li p {
         font-size: 12px;
     }
+
     span.offer-tag {
         font-size: 10px;
     }
+
     a.buy-btn {
         display: block;
         background-color: var(--brand-900);
@@ -776,6 +859,7 @@ a.buy-btn:hover {
     .header-container {
         width: var(--s-m-container);
     }
+
     .header-nav a {
         display: inline-block;
         text-decoration: none;
@@ -785,9 +869,11 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     .section-slide {
         width: var(--s-m-container);
     }
+
     .section-slide-row {
         display: flex;
         flex-direction: row;
@@ -799,16 +885,20 @@ a.buy-btn:hover {
         height: 100%;
         padding: 0px 10px;
     }
+
     .slide-col {
         width: 50%;
         padding: 15px;
     }
+
     .slide-content.slide-content-left h2 {
         font-size: 32px;
     }
+
     .slide-content.slide-content-left p {
         font-size: 14px;
     }
+
     a.hero-btn {
         display: inline-block;
         padding: 10px 20px;
@@ -818,27 +908,32 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     a.yt-player {
         display: block;
         width: 80%;
-        height:  80%;
+        height: 80%;
         position: relative;
         border-radius: var(--btn-border-radius);
         margin: 0 auto;
     }
+
     .slide-content.about-desc p {
         font-size: 12px;
         text-align: justify;
     }
+
     .about-img img {
         width: 50%;
         height: 50%;
         margin: 0 auto;
         border-radius: var(--global-border-radius);
     }
+
     .pricing-col {
         width: 100% !important;
     }
+
     .pricing-row {
         width: 100%;
         display: flex;
@@ -848,28 +943,35 @@ a.buy-btn:hover {
         align-items: center;
         padding: 0px 15px;
     }
+
     .pricing-card-header {
         background-color: var(--brand-100);
         padding: 0px 20px;
         width: 40%;
     }
+
     .pricing-col.middle {
         margin-top: 30px;
     }
+
     .pricing-card-header p {
         margin: 20px 0px 20px 0px;
         font-size: 32px;
         font-weight: 600;
     }
+
     .pricing-card-header span {
         font-size: 14px;
     }
+
     .pricing-card-services ul li p {
         font-size: 12px;
     }
+
     span.offer-tag {
         font-size: 10px;
     }
+
     a.buy-btn {
         display: block;
         background-color: var(--brand-900);
@@ -893,6 +995,7 @@ a.buy-btn:hover {
     .header-container {
         width: var(--s-m-container);
     }
+
     .header-nav a {
         display: inline-block;
         text-decoration: none;
@@ -902,9 +1005,11 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     .section-slide {
         width: var(--s-m-container);
     }
+
     .section-slide-row {
         display: flex;
         flex-direction: row;
@@ -916,16 +1021,20 @@ a.buy-btn:hover {
         height: 100%;
         padding: 0px 10px;
     }
+
     .slide-col {
         width: 50%;
         padding: 15px;
     }
+
     .slide-content.slide-content-left h2 {
         font-size: 32px;
     }
+
     .slide-content.slide-content-left p {
         font-size: 14px;
     }
+
     a.hero-btn {
         display: inline-block;
         padding: 10px 20px;
@@ -935,27 +1044,32 @@ a.buy-btn:hover {
         border-radius: var(--btn-border-radius);
         font-size: 12px;
     }
+
     a.yt-player {
         display: block;
         width: 80%;
-        height:  80%;
+        height: 80%;
         position: relative;
         border-radius: var(--btn-border-radius);
         margin: 0 auto;
     }
+
     .slide-content.about-desc p {
         font-size: 12px;
         text-align: justify;
     }
+
     .about-img img {
         width: 50%;
         height: 50%;
         margin: 0 auto;
         border-radius: var(--global-border-radius);
     }
+
     .pricing-col {
         width: 100% !important;
     }
+
     .pricing-row {
         width: 100%;
         display: flex;
@@ -965,28 +1079,35 @@ a.buy-btn:hover {
         align-items: center;
         padding: 0px 15px;
     }
+
     .pricing-card-header {
         background-color: var(--brand-100);
         padding: 0px 20px;
         width: 40%;
     }
+
     .pricing-col.middle {
         margin-top: 30px;
     }
+
     .pricing-card-header p {
         margin: 20px 0px 20px 0px;
         font-size: 32px;
         font-weight: 600;
     }
+
     .pricing-card-header span {
         font-size: 14px;
     }
+
     .pricing-card-services ul li p {
         font-size: 12px;
     }
+
     span.offer-tag {
         font-size: 10px;
     }
+
     a.buy-btn {
         display: block;
         background-color: var(--brand-900);
