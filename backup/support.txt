@@ -98,3 +98,164 @@ a.yt-player img {
     border-radius: var(--global-border-radius);
     box-shadow: 0px 0px 100px -40px #0000003b;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Js Code For YouTube
+// Load the YouTube Player API code asynchronously
+// var tag = document.createElement('script');
+// tag.src = "https://www.youtube.com/iframe_api";
+// var firstScriptTag = document.getElementsByTagName('script')[0];
+// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+var timerInterval;
+var countdown = 900; // 15 minutes in seconds
+
+function onYouTubeIframeAPIReady() {
+  // Create an instance of the player
+  player = new YT.Player('player', {
+    height: '360',
+    width: '640',
+    videoId: 'ssGNpHibSJ4',
+    playerVars: {
+      autoplay: 1, // Set to 1 to autoplay
+      controls: 0, // Set to 1 to show controls
+      disablekb: 1, // Set to 0 to enable keyboard controls
+      enablejsapi: 0, // Set to 0 to disable JavaScript API access
+      modestbranding: 0, // Set to 0 to show YouTube logo
+      playsinline: 0, // Set to 0 to play video in full screen on mobile devices
+      rel: 0, // Set to 1 to show related videos at the end
+      showinfo: 0 // Set to 1 to show video title and uploader
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  // Start the countdown timer
+  timerInterval = setInterval(function () {
+    countdown--;
+    if (countdown <= 0) {
+      // Show the button after 15 minutes
+      document.getElementById('myButton').style.display = 'block';
+      clearInterval(timerInterval);
+    }
+  }, 1000);
+
+  // Add event listener to pause and play the video
+  player.addEventListener('onStateChange', function (event) {
+    if (event.data == YT.PlayerState.PAUSED) {
+      clearInterval(timerInterval);
+    } else if (event.data == YT.PlayerState.PLAYING) {
+      timerInterval = setInterval(function () {
+        countdown--;
+        if (countdown <= 0) {
+          // Show the button after 15 minutes
+          document.getElementById('myButton').style.display = 'block';
+          clearInterval(timerInterval);
+        }
+      }, 1000);
+    }
+  });
+}
+
+function onPlayerStateChange(event) {
+
+}
+function play() {
+  player.playVideo();
+}
+function pause() {
+  player.pauseVideo();
+}
+
+
+// Time Reverse Counter
+let timeInSecs;
+let ticker;
+
+function startTimer(secs) {
+  timeInSecs = parseInt(secs);
+  ticker = setInterval("tick()", 1000);
+}
+
+function tick() {
+  let secs = timeInSecs;
+  if (secs > 0) {
+    timeInSecs--;
+  } else {
+    clearInterval(ticker);
+    startTimer(15 * 60); // 5 minutes in seconds
+  }
+
+  let mins = Math.floor(secs / 60);
+  secs %= 60;
+
+  let result =
+    (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
+
+  document.getElementById("countdown").innerHTML = result;
+}
+startTimer(15 * 60); // 5 minutes in seconds

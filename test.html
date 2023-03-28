@@ -1,0 +1,60 @@
+<!-- HTML code for the YouTube embed and timer -->
+<div id="player"></div>
+<div id="timer">15:00</div>
+<div id="button" style="display: none;">
+  <a href="http://example.com">Go to another page</a>
+</div>
+
+<!-- JavaScript code to control the video and reverse timer -->
+<script>
+  var player;
+  var timerInterval;
+  var countdown = 900; // 15 minutes in seconds
+
+  // Load the YouTube Player API code asynchronously
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Create the reverse timer
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    timerInterval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(timerInterval);
+            document.getElementById("button").style.display = "block";
+        }
+    }, 1000);
+  }
+
+  function onYouTubeIframeAPIReady() {
+    // Create an instance of the player
+    player = new YT.Player('player', {
+      height: '360',
+      width: '640',
+      videoId: 'ssGNpHibSJ4',
+      playerVars: {
+        controls: 0, // hide controls
+        autoplay: 1, // autoplay on load
+        modestbranding: 1 // hide YouTube logo
+      },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Start the reverse timer
+    startTimer(countdown, document.getElementById("timer"));
+  }
+</script>

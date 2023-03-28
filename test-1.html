@@ -1,0 +1,64 @@
+<!-- HTML code for the YouTube embed -->
+<div id="player"></div>
+
+<!-- HTML code for the button that will be shown after 15 minutes -->
+<button id="myButton" style="display:none;">Go to another link</button>
+
+<!-- JavaScript code to control the video and countdown timer -->
+<script>
+  // Load the YouTube Player API code asynchronously
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  var timerInterval;
+  var countdown = 900; // 15 minutes in seconds
+
+  function onYouTubeIframeAPIReady() {
+    // Create an instance of the player
+    player = new YT.Player('player', {
+      height: '360',
+      width: '640',
+      videoId: 'ssGNpHibSJ4',
+      playerVars: {
+        controls: 1, // show default controls
+        autoplay: 1, // autoplay on load
+        disablekb: 1, // disable keyboard controls
+        modestbranding: 1 // hide YouTube logo
+      },
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Start the countdown timer
+    timerInterval = setInterval(function() {
+      countdown--;
+      if (countdown <= 0) {
+        // Show the button after 15 minutes
+        document.getElementById('myButton').style.display = 'block';
+        clearInterval(timerInterval);
+      }
+    }, 1000);
+
+    // Add event listener to pause and play the video
+    player.addEventListener('onStateChange', function(event) {
+      if (event.data == YT.PlayerState.PAUSED) {
+        clearInterval(timerInterval);
+      } else if (event.data == YT.PlayerState.PLAYING) {
+        timerInterval = setInterval(function() {
+          countdown--;
+          if (countdown <= 0) {
+            // Show the button after 15 minutes
+            document.getElementById('myButton').style.display = 'block';
+            clearInterval(timerInterval);
+          }
+        }, 1000);
+      }
+    });
+  }
+</script>
