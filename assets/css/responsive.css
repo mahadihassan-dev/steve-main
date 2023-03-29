@@ -134,6 +134,10 @@ Front End Developed By Mahadi hassan
 
   /* == lading  - Pricing :: Start == */
 
+  #pricing {
+    margin-top: 100px;
+  }
+
   .lb-container {
     width: var(--s-m-container);
   }
@@ -202,6 +206,22 @@ Front End Developed By Mahadi hassan
   }
 
   /* == lading  - Pricing :: End == */
+
+  /* ==== Landing - Policy :: Start ==== */
+  .policy-page-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .policy-page-container {
+    width: var(--s-m-container);
+  }
+  .page-content {
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+  /* ==== Landing - Policy :: End ==== */
 
   .forum-details .forum-details-post .forum-info {
     flex-direction: column !important;
@@ -591,13 +611,17 @@ Front End Developed By Mahadi hassan
 
   .slide-col {
     width: 100%;
-    padding: 25px 18px;
+    padding: 75px 18px;
     height: 100%;
   }
 
   /* == lading  - About :: End == */
 
   /* == lading  - Pricing :: Start == */
+
+  #pricing {
+    margin-top: 100px;
+  }
 
   .lb-container {
     width: var(--s-m-container);
@@ -663,6 +687,23 @@ Front End Developed By Mahadi hassan
   }
 
   /* == lading  - Pricing :: End == */
+
+  /* ==== Landing - Policy :: Start ==== */
+  .policy-page-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .policy-page-container {
+    width: var(--s-m-container);
+  }
+
+  .page-content {
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+  /* ==== Landing - Policy :: End ==== */
 
 
   .forum-details .forum-details-post .forum-info {
