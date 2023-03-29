@@ -244,7 +244,7 @@ body::-webkit-scrollbar-thumb {
 
 .video-section-wrapper {
     position: relative;
-    padding: 130px 0px;
+    padding: 130px 0px 90px;
 }
 .video-section-wrapper::before {
   position: absolute;

@@ -4,7 +4,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'ssGNpHibSJ4', // Replace with your YouTube video ID
         playerVars: {
             autoplay: 1, // Set to 1 to autoplay
-            controls: 1, // Set to 1 to show controls
+            controls: 0, // Set to 1 to show controls
             disablekb: 1, // Set to 0 to enable keyboard controls
             enablejsapi: 1, // Set to 0 to disable JavaScript API access
             modestbranding: 1, // Set to 0 to show YouTube logo
@@ -31,8 +31,9 @@ function pause() {
     player.pauseVideo();
 }
 var buyBtn = document.getElementById("get-started");
-setTimeout(myFunction, 540000); // call myFunction after 2 minutes
+setTimeout(myFunction, 20000); // call myFunction after 2 minutes
 
 function myFunction() {
-    buyBtn.style.display = "inline-block";
+    buyBtn.style.display = "block";
+    buyBtn.style.textAlign = "center";
 }

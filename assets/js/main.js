@@ -49,17 +49,17 @@ $(document).ready(function () {
 // Scroll Back to top :: Start
 window.onscroll = () => {
     toggleTopButton();
-  }
-  function scrollToTop() {
+}
+function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
 
-  function toggleTopButton() {
+function toggleTopButton() {
     if (document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20) {
-      document.getElementById('back-to-up').classList.remove('d-none');
+        document.documentElement.scrollTop > 20) {
+        document.getElementById('back-to-up').classList.remove('d-none');
     } else {
-      document.getElementById('back-to-up').classList.add('d-none');
+        document.getElementById('back-to-up').classList.add('d-none');
     }
-  }
+}
   // Scroll Back to top :: End
