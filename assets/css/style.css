@@ -565,7 +565,7 @@ a.buy-btn {
   border-radius: var(--global-border-radius);
   width: 100%;
   padding: 10px 20px;
-  color: var(--brand-100);
+  color: var(--brand-100) !important;
   text-decoration: none;
   text-align: center;
   transition: var(--global-transation);

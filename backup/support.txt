@@ -259,3 +259,13 @@ function tick() {
   document.getElementById("countdown").innerHTML = result;
 }
 startTimer(15 * 60); // 5 minutes in seconds
+
+
+
+Good Morning Sir! I love it, but I'm so sorry I need to make 2 small changes please...
+The Top Title highlight when you mouse over the tab at the top Of your screen - says comming soon Stevee - iManifest - Can we change this to: The Universe is
+Being Built
+2. Retype the tagline to this please: God created the world in 6 days and rested on the seventh.
+We're creating the iManifest Universe... We might need some extra time...
+But I love the look of it! and the email is to go to info@imanifest.money yes?
+and... One more thing... Thank you! g

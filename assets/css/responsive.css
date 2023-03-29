@@ -107,7 +107,99 @@ Front End Developed By Mahadi hassan
 
   /* == lading  - Home :: End == */
 
+  /* == lading  - About :: Start == */
+  .section-slide-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-col {
+    width: 100%;
+    padding: 25px 18px;
+    height: 100%;
+  }
+
+  .slide-content.about-desc p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  /* == lading  - About :: End == */
+
   /* == lading  - Pricing :: Start == */
+
+  .lb-container {
+    width: var(--s-m-container);
+  }
+
+  .lb-wrapper {
+    padding: 150px 20px 30px;
+  }
+
+  .section-wrapper::before,
+  .section-wrapper::after {
+    display: none !important;
+  }
+
+  .section-slide {
+    width: var(--s-m-container);
+  }
+
+  .section-wrapper {
+    padding: 30px 0px;
+  }
+
+  .pricing-row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .pricing-col {
+    width: 100% !important;
+  }
+
+  .pricing-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-100);
+    transition: var(--global-transation);
+    padding: 20px;
+    border-radius: var(--global-border-radius);
+  }
+
+  .pricing-card-header {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px 0px;
+  }
+
+  .pricing-card-header::after {
+    border-bottom: 1px solid #e6e9ed;
+    border-right: 0;
+  }
+
+  .pricing-card-header p {
+    font-size: 36px;
+  }
+
+  .pricing-card-services {
+    width: 100%;
+  }
+
+  .offer-tag {
+    z-index: 1;
+  }
 
   /* == lading  - Pricing :: End == */
 
@@ -425,7 +517,154 @@ Front End Developed By Mahadi hassan
 }
 
 /* For Smartphone */
-@media only screen and (min-width: 360.5px) and (max-width: 479px) {
+@media only screen and (min-width: 361px) and (max-width: 479px) {
+  /* == lading  - Home :: Start == */
+
+  /* Header :: Start */
+  .header-row {
+    padding: 0px 25px;
+  }
+
+  .header-container {
+    width: var(--s-m-container);
+    margin: 0 auto;
+  }
+
+  .video-section-container {
+    width: var(--s-m-container) !important;
+  }
+
+  .video-section-wrapper::before,
+  .video-section-wrapper::after {
+    display: none;
+  }
+
+  .video-section-row {
+    padding: 0px 20px;
+  }
+
+  .video-section-col iframe {
+    height: 200px;
+  }
+
+  .footer-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    padding: 0px 40px;
+  }
+
+  .footer-link ul li {
+    display: block;
+    margin: 10px 5px;
+  }
+
+  .footer-link ul {
+    margin-top: 27px !important;
+  }
+
+  /* Footer :: Start */
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  /* == lading  - Home :: End == */
+
+  /* == lading  - About :: Start == */
+  .section-slide-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide-col {
+    width: 100%;
+    padding: 25px 18px;
+    height: 100%;
+  }
+
+  /* == lading  - About :: End == */
+
+  /* == lading  - Pricing :: Start == */
+
+  .lb-container {
+    width: var(--s-m-container);
+  }
+
+  .lb-wrapper {
+    padding: 150px 20px 30px;
+  }
+
+  .section-wrapper::before,
+  .section-wrapper::after {
+    display: none !important;
+  }
+
+  .section-slide {
+    width: var(--s-m-container);
+  }
+
+  .section-wrapper {
+    padding: 30px 0px;
+  }
+
+  .pricing-row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .pricing-col {
+    width: 100% !important;
+  }
+
+  .pricing-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-100);
+    transition: var(--global-transation);
+    padding: 20px;
+    border-radius: var(--global-border-radius);
+  }
+
+  .pricing-card-header {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px 0px;
+  }
+
+  .pricing-card-header::after {
+    border-bottom: 1px solid #e6e9ed;
+    border-right: 0;
+  }
+
+  .pricing-card-services {
+    width: 100%;
+  }
+
+  .offer-tag {
+    z-index: 1;
+  }
+
+  /* == lading  - Pricing :: End == */
+
+
   .forum-details .forum-details-post .forum-info {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -506,10 +745,6 @@ Front End Developed By Mahadi hassan
     margin: 0;
     padding: 10px;
   }
-
-
-
-
 
   main.dashboard-content-wrapper {
     padding: 0px !important;
