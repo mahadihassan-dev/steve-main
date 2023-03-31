@@ -365,7 +365,6 @@ Front End Developed By Mahadi hassan
   /* === Dashboard - Write Forum :: Start */
   .dashboard-write-forum .dash-main-right main.dashboard-content-wrapper {
     padding: 10px !important;
-    background-color: red !important;
   }
 
   /* === Dashboard - Write Forum :: End */
@@ -575,8 +574,30 @@ Front End Developed By Mahadi hassan
   /* forum mane page start */
   .forum-main {
     flex-direction: column;
+    padding: 5px;
   }
 
+  .forum-post-wrapper {
+    padding: 10px;
+  }
+
+  .forum-post-info {
+    flex-direction: column;
+}
+
+.forum-post-card p {
+  font-size: 14px;
+}
+.forum-post-info div {
+  margin: 0;
+}
+
+.forum-publisher-info h5 {
+  font-size: 14px;
+}
+.forum-publisher-info p {
+  font-size: 11px;
+}
   .forum-main .forum-main-all-forum {
     width: 100%;
     margin: 0 auto;
