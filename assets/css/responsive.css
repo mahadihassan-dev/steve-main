@@ -583,21 +583,24 @@ Front End Developed By Mahadi hassan
 
   .forum-post-info {
     flex-direction: column;
-}
+  }
 
-.forum-post-card p {
-  font-size: 14px;
-}
-.forum-post-info div {
-  margin: 0;
-}
+  .forum-post-card p {
+    font-size: 14px;
+  }
 
-.forum-publisher-info h5 {
-  font-size: 14px;
-}
-.forum-publisher-info p {
-  font-size: 11px;
-}
+  .forum-post-info div {
+    margin: 0;
+  }
+
+  .forum-publisher-info h5 {
+    font-size: 14px;
+  }
+
+  .forum-publisher-info p {
+    font-size: 11px;
+  }
+
   .forum-main .forum-main-all-forum {
     width: 100%;
     margin: 0 auto;
@@ -1450,6 +1453,181 @@ Front End Developed By Mahadi hassan
 
 /* For Small Size Tab */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* forum mane page start */
+  .forum-main {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .forum-post-wrapper {
+    padding: 10px;
+  }
+
+  .forum-post-info {
+    flex-direction: column;
+  }
+
+  .forum-post-card p {
+    font-size: 14px;
+  }
+
+  .forum-post-info div {
+    margin: 0;
+  }
+
+  .forum-publisher-info h5 {
+    font-size: 14px;
+  }
+
+  .forum-publisher-info p {
+    font-size: 11px;
+  }
+
+  .forum-main .forum-main-all-forum {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .forum-main .forum-main-all-forum .forum-main-all-forum-item {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .forum-main .forum-main-rightbar {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* forum-details page start  */
+
+  .forum-details .forum-details-section {
+    flex-direction: column;
+  }
+
+  .forum-details .forum-details-post {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .forum-details .forum-details-rightbar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .forum-details {
+    padding: 18px 22px;
+  }
+
+  .forum-details .forum-details-title h2 {
+    font-size: 20px;
+  }
+
+  .forum-details .forum-details-title p {
+    font-size: 12px;
+  }
+
+  .forum-details .forum-details-post {
+    padding: 20px;
+  }
+
+  .forum-details .forum-details-post h5 {
+    font-size: 20px;
+  }
+
+  .forum-details .forum-details-post .forum-publisher-profile p {
+    font-size: 12px;
+  }
+
+  .forum-details .forum-details-post .forum-publisher-profile {
+    margin: 12px 0;
+  }
+
+  .forum-details .forum-details-post .forum-info p {
+    font-size: 10px;
+  }
+
+  .forum-details .forum-details-post .forum-info i {
+    margin: 0 5px 0 9px;
+  }
+
+  .forum-details .forum-details-post .forum-description {
+    font-size: 14px;
+  }
+
+  .forum-details .forum-details-post .feedback {
+    padding: 8px 16px;
+  }
+
+  .forum-details .forum-details-post .feedback i {
+    font-size: 12px;
+  }
+
+  .forum-details .forum-details-post .forum-feedback-comment {
+    padding: 20px 21px;
+  }
+
+  .forum-details .forum-details-post .forum-feedback-comment p {
+    font-size: 14px;
+  }
+
+  .forum-details .forum-details-post .forum-feedback-comment .comment-profile p {
+    font-size: 12px;
+  }
+
+  .forum-details .forum-details-post .add-comment-section {
+    padding: 20px 18px 14px 20px;
+  }
+
+  .forum-details .forum-details-post .add-comment-section textarea {
+    height: 100px;
+  }
+
+  .forum-details .forum-details-post .add-comment-section textarea::placeholder {
+    font-size: 14px;
+  }
+
+  .forum-details .forum-details-post .add-comment-section button {
+    margin-right: 14px;
+  }
+
+  /* forum-details-rightbar */
+  .forum-details .forum-details-rightbar {
+    padding: 16px;
+  }
+
+  .forum-details .forum-details-rightbar hr {
+    margin: 25px 0 22px 0;
+  }
+
+  .forum-details-rightbar .popular-forum-post h2,
+  .forum-details-rightbar .related-forum-post h2 {
+    font-size: 18px;
+  }
+
+  .forum-details-rightbar .popular-forum-post .popular-forum-post-card,
+  .forum-details-rightbar .related-forum-post .related-forum-post-card {
+    margin-top: 22px;
+  }
+
+  .forum-details-rightbar .popular-forum-post .popular-forum-post-card h6,
+  .forum-details-rightbar .related-forum-post .related-forum-post-card h6 {
+    font-size: 14px;
+  }
+
+  .forum-details-rightbar .popular-forum-post .popular-forum-post-card p,
+  .forum-details-rightbar .related-forum-post .related-forum-post-card p {
+    font-size: 10px;
+  }
+
+  .forum-details-rightbar .trending-topics h2 {
+    font-size: 18px;
+  }
+
+  .forum-details-rightbar .trending-topics p {
+    font-size: 16px;
+  }
   .insights-book-wrapper {
     overflow-y: scroll;
     height: 650px;
