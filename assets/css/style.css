@@ -371,10 +371,12 @@ a.hero-btn {
 .policy-page-wrapper {
   margin-bottom: 60px;
 }
+
 .policy-page-container {
   width: var(--big-container);
   margin: 0 auto;
 }
+
 /* ==== Landing - Policy :: End ==== */
 
 /* ==== Landing - Pricing :: Start ==== */
@@ -682,6 +684,7 @@ a.yt-player img {
 .dash-breadcrumb-tree {
   padding: 35px 60px;
 }
+
 /* :: All Journal :: */
 
 .journals {
@@ -707,9 +710,11 @@ a.yt-player img {
   grid-column-gap: 16px;
   grid-row-gap: 24px;
 }
+
 .journal-card a {
   display: block;
 }
+
 .journal-card-thumb {
   position: relative;
 }
@@ -919,6 +924,7 @@ ul.journal-btn li.active a {
   line-height: 21px;
   font-family: var(--primary-font-family);
 }
+
 /* 
 .journal-btn li:nth-child(2) a {
   color: var(--brand-100) !important;
@@ -948,7 +954,7 @@ ul.journal-btn li.active a {
   justify-content: flex-end;
 }
 
-.w-journal-btn button:nth-child(1n+1){
+.w-journal-btn button:nth-child(1n+1) {
   margin-left: 10px;
 }
 
@@ -961,11 +967,17 @@ ul.journal-btn li.active a {
 }
 
 .guides-collection {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+
+.guide-card {
+  width: 23%;
+  margin: 10px 15px;
 }
 
 .guide-card-thumbnail img {
@@ -986,6 +998,7 @@ ul.journal-btn li.active a {
 .guide-card-details p {
   color: var(--global-dash-font);
 }
+
 /* Guide Details page start */
 .guide-details {
   background-color: #fafcff;
@@ -2352,4 +2365,3 @@ ul.post-tag li a {
 .page-breadcrumb {
   margin-bottom: 25px;
 }
-

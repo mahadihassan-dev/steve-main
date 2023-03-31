@@ -48,6 +48,14 @@ Front End Developed By Mahadi hassan
 /* For Extra Small Device to 320px Device */
 @media only screen and (min-width: 320px) and (max-width: 360px) {
 
+  /* == Dashboard Breadcrumb :: Start == */
+  .dash-breadcrumb-tree {
+    padding: 35px 0px;
+  }
+
+  /* == Dashboard Breadcrumb :: End == */
+
+
   /* == lading  - Home :: Start == */
 
   /* Header :: Start */
@@ -215,13 +223,151 @@ Front End Developed By Mahadi hassan
   .policy-page-container {
     width: var(--s-m-container);
   }
+
   .page-content {
     padding: 20px;
     text-align: justify;
     font-size: 14px;
-}
+  }
 
   /* ==== Landing - Policy :: End ==== */
+
+  /* ==== Dashbaord - Books :: Start ==== */
+  .books-collection {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .books-collection .book {
+    width: 100%;
+  }
+
+  /* ==== Dashbaord - Books :: End ==== */
+
+  /* ==== Dashbaord - Journal :: Start ==== */
+  /* Journal Detail :: Start */
+  .journal-details {
+    padding: 20px 0px 20px 0px;
+    background-color: #fafcff;
+  }
+
+  .journal-details-section p {
+    text-align: justify;
+  }
+
+  /* Journal Detail :: End */
+  /* .journals page start*/
+  .journals .journals-collection {
+    grid-template-columns: auto;
+  }
+
+  /* .journals page end*/
+
+  /* journals details page start  */
+  .journal-details-section {
+    height: 100%;
+  }
+
+  .journal-details-section h2,
+  .journal-details-section h5 {
+    font-size: 18px;
+  }
+
+  .journal-btn li a {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .write-journal {
+    padding: 27px 20px 70px 20px;
+  }
+
+  .write-journal button {
+    font-size: 9px;
+    padding: 5px 8px;
+  }
+
+  .write-journal form {
+    padding: 20px 20px;
+    background-color: #fff;
+    width: 97%;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+
+  /* ==== Dashbaord - Journal :: End ==== */
+
+  /* === Dashboard - Guides :: Start */
+  .guides-section {
+    padding: 0px;
+  }
+
+  .guide-card {
+    width: 100%;
+    margin: 10px 15px;
+  }
+
+  /* === Dashboard - Guides :: End */
+
+  /* === Dashboard - Guides :: Start */
+  .guides-section {
+    padding: 20px 20px;
+  }
+
+  .guide-card {
+    width: 100%;
+    margin: 10px 15px;
+  }
+
+  /* guides page end  */
+  /* guides details page end  */
+  .guide-details-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .guide-details-title h2 {
+    font-size: 18px;
+  }
+
+  .guide-details-sitebar {
+    width: 100%;
+  }
+
+  .guide-details .d-flex {
+    flex-direction: column;
+  }
+
+  .guide-details-sitebar img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .guide-details-sitebar h6 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .guide-details-sitebar p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  /* guide-details end  */
+
+  /* === Dashboard - Guides :: End */
+  
+  
+  /* === Dashboard - Write Forum :: Start */
+  .dashboard-write-forum .dash-main-right main.dashboard-content-wrapper {
+    padding: 10px !important;
+    background-color: red !important;
+  }
+  /* === Dashboard - Write Forum :: End */
 
   .forum-details .forum-details-post .forum-info {
     flex-direction: column !important;
@@ -310,23 +456,6 @@ Front End Developed By Mahadi hassan
   }
 
   /* guides page end  */
-
-  /* .journals page start*/
-  .journals .journals-collection {
-    grid-template-columns: auto;
-  }
-
-  /* .journals page end*/
-
-  /* journals details page start  */
-  .journal-details-section {
-    height: 100%;
-  }
-
-  .journal-details-section h2,
-  .journal-details-section h5 {
-    font-size: 18px;
-  }
 
   /* video page start */
   /* and audio page start */
@@ -701,9 +830,93 @@ Front End Developed By Mahadi hassan
     padding: 20px;
     text-align: justify;
     font-size: 14px;
-}
+  }
 
   /* ==== Landing - Policy :: End ==== */
+
+  /* === Dashboard - Journal Details :: Start */
+  .journals {
+    padding: 20px 20px;
+  }
+
+  .dash-breadcrumb-tree {
+    padding: 35px 25px;
+  }
+
+  .journal-details {
+    padding: 24px 25px 52px 25px;
+  }
+
+  .journal-details-section p {
+    text-align: justify;
+  }
+
+  .journal-btn li a {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .write-journal {
+    padding: 27px 20px 70px 20px;
+  }
+
+  .write-journal button {
+    font-size: 11px;
+    padding: 5px 11px;
+  }
+
+  /* === Dashboard - Journal Details :: End */
+
+
+  /* === Dashboard - Guides :: Start */
+  .guides-section {
+    padding: 20px 20px;
+  }
+
+  .guide-card {
+    width: 100%;
+    margin: 10px 15px;
+  }
+
+  /* guides page end  */
+  /* guides details page end  */
+  .guide-details-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .guide-details-title h2 {
+    font-size: 18px;
+  }
+
+  .guide-details-sitebar {
+    width: 100%;
+  }
+
+  .guide-details .d-flex {
+    flex-direction: column;
+  }
+
+  .guide-details-sitebar img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .guide-details-sitebar h6 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .guide-details-sitebar p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  /* guide-details end  */
+
+  /* === Dashboard - Guides :: End */
+
 
 
   .forum-details .forum-details-post .forum-info {
@@ -880,42 +1093,7 @@ Front End Developed By Mahadi hassan
 
 
 
-  /* guides page end  */
-  /* guides details page end  */
-  .guide-details-section {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-
-  .guide-details-title h2 {
-    font-size: 18px;
-  }
-
-  .guide-details-sitebar {
-    width: 100%;
-  }
-
-  .guide-details .d-flex {
-    flex-direction: column;
-  }
-
-  .guide-details-sitebar img {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .guide-details-sitebar h6 {
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .guide-details-sitebar p {
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  /* guide-details end  */
+  
 
   /* .journals page start*/
   .journals .journals-collection {
