@@ -360,13 +360,14 @@ Front End Developed By Mahadi hassan
   /* guide-details end  */
 
   /* === Dashboard - Guides :: End */
-  
-  
+
+
   /* === Dashboard - Write Forum :: Start */
   .dashboard-write-forum .dash-main-right main.dashboard-content-wrapper {
     padding: 10px !important;
     background-color: red !important;
   }
+
   /* === Dashboard - Write Forum :: End */
 
   .forum-details .forum-details-post .forum-info {
@@ -460,6 +461,18 @@ Front End Developed By Mahadi hassan
   /* video page start */
   /* and audio page start */
 
+  /* === Dashbaord - Course - Start === */
+  .courses-wrapper {
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .courses-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
   .courses-video,
   .courses-audio {
     padding: 16px;
@@ -482,6 +495,11 @@ Front End Developed By Mahadi hassan
     width: 100%;
   }
 
+  /* === Dashbaord - Course - End === */
+
+
+  /* === Dashbaord - Insights - Start === */
+
   /* insights cursor section  */
   .insights-section {
     flex-direction: column;
@@ -499,6 +517,47 @@ Front End Developed By Mahadi hassan
     overflow-y: auto;
     margin-top: 20px;
   }
+
+  .insights-book-wrapper {
+    overflow-y: scroll;
+    height: 650px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+  }
+
+  .insights-book-section .insights-book-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px 20px 16px;
+    border-radius: 4px;
+    box-shadow: 0px 3.56554px 35.6554px rgba(0, 0, 0, 0.07);
+  }
+
+  .insights-book-card div:nth-child(1) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .insights-book-card div:nth-child(1) img {
+    margin: 0;
+  }
+
+  .insights-book-card div:nth-child(1) div {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .insights-course-section .insights-course {
+    grid-template-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 10px;
+    margin: 20px 10px;
+    height: 615px;
+    overflow-y: scroll;
+  }
+
+  /* === Dashbaord - Insights - End === */
 
   /* dashbord page  */
   .dashbord-section {
@@ -865,6 +924,15 @@ Front End Developed By Mahadi hassan
     padding: 5px 11px;
   }
 
+  .journals button {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .journals button i {
+    margin-right: 5px;
+  }
+
   /* === Dashboard - Journal Details :: End */
 
 
@@ -918,7 +986,69 @@ Front End Developed By Mahadi hassan
   /* === Dashboard - Guides :: End */
 
 
+  /* === Dashbaord - Insights - Start === */
 
+  /* insights cursor section  */
+  .insights-section {
+    flex-direction: column;
+  }
+
+  .insights-book-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .insights-course-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+
+  .insights-book-wrapper {
+    overflow-y: scroll;
+    height: 650px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+  }
+
+  .insights-book-section .insights-book-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px 20px 16px;
+    border-radius: 4px;
+    box-shadow: 0px 3.56554px 35.6554px rgba(0, 0, 0, 0.07);
+  }
+
+  .insights-book-card div:nth-child(1) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .insights-book-card div:nth-child(1) img {
+    margin: 0;
+  }
+
+  .insights-book-card div:nth-child(1) div {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .insights-course-section .insights-course {
+    grid-template-columns: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 10px;
+    margin: 20px 10px;
+    height: 615px;
+    overflow-y: scroll;
+  }
+
+  /* === Dashbaord - Insights - End === */
+
+
+  /* === Dashboard - Forum :: Start */
   .forum-details .forum-details-post .forum-info {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -971,204 +1101,6 @@ Front End Developed By Mahadi hassan
   .forum-post-card p {
     font-size: 14px;
     text-align: justify;
-  }
-
-  .insights-book-wrapper {
-    overflow-y: scroll;
-    height: 650px;
-    padding: 10px 10px;
-    margin: 20px 10px;
-  }
-
-  .books-collection .book {
-    width: 100%;
-    margin: 0px 25px;
-    padding: 0px 15px;
-  }
-
-  .journals button {
-    padding: 8px;
-    font-size: 12px;
-  }
-
-  .journals button i {
-    margin-right: 5px;
-  }
-
-  .books-section {
-    margin: 0;
-    padding: 10px;
-  }
-
-  main.dashboard-content-wrapper {
-    padding: 0px !important;
-  }
-
-  .brws-books-card-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-  }
-
-  .my-dashboard {
-    padding: 25px 0px 20px 0px;
-    background-color: #fafcff;
-  }
-
-  .book-card-info h1 {
-    font-size: 12px;
-  }
-
-  .book-card-info p {
-    font-size: 12px;
-  }
-
-  .course-card-info h6 {
-    font-size: 12px;
-  }
-
-
-  .browse-category {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-    padding: 15px;
-  }
-
-
-  .courses-row {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .home-section {
-    width: 100% !important;
-    padding: 20px;
-    margin: 45px auto;
-  }
-
-  /* home page start  */
-  .home-bg-top {
-    height: 477px;
-  }
-
-  .home-section {
-    width: 344px;
-  }
-
-  .home-video-container {
-    margin-top: 261px;
-  }
-
-  .home-nav button {
-    padding: 7px 35px;
-    font-size: 14px;
-  }
-
-  /* home page end  */
-
-  /* login page start  */
-  .login-form form {
-    top: 515px;
-    width: 320px;
-  }
-
-  .login-bg img {
-    width: 28%;
-  }
-
-  .login-form form {
-    padding: 18px !important;
-  }
-
-  /* log in end  */
-  /* book page start  */
-
-
-  /* book page end  */
-
-
-
-  
-
-  /* .journals page start*/
-  .journals .journals-collection {
-    grid-template-columns: auto;
-  }
-
-  .journals .journals-collection h6 {
-    font-size: 11px;
-  }
-
-  /* .journals page end*/
-
-  /* journals details page start  */
-  .journal-details-section {
-    height: 100%;
-  }
-
-  .journal-details-section h2,
-  .journal-details-section h5 {
-    font-size: 18px;
-  }
-
-  /* video page start */
-  /* and audio page start */
-  .courses-video,
-  .courses-audio {
-    padding: 16px;
-  }
-
-  .courses-video-section,
-  .courses-audio-section {
-    flex-direction: column-reverse;
-  }
-
-  .courses-video-modul,
-  .courses-audio-modul {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  .courses-video .video,
-  .courses-audio .audio {
-    width: 100%;
-  }
-
-  /* insights cursor section  */
-  .insights-section {
-    flex-direction: column;
-  }
-
-  .insights-book-section {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  .insights-course-section {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    margin-top: 20px;
-  }
-
-  /* dashbord page  */
-  .dashbord-section {
-    flex-direction: column;
-  }
-
-  .dashobrd-book-section {
-    width: 100%;
-  }
-
-  .dashboard-course-section {
-    width: 100%;
   }
 
   /* forum mane page start */
@@ -1321,10 +1253,189 @@ Front End Developed By Mahadi hassan
   .forum-details-rightbar .trending-topics p {
     font-size: 16px;
   }
+
+  /* === Dashboard - Forum :: End */
+
+
+  /* === Dashboard - Insights :: Start */
+  .insights-book-wrapper {
+    overflow-y: scroll;
+    height: 650px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+  }
+
+  /* === Dashboard - Insights :: End */
+
+
+
+
+  .books-collection .book {
+    width: 100%;
+    margin: 0px 25px;
+    padding: 0px 15px;
+  }
+
+
+
+  .books-section {
+    margin: 0;
+    padding: 10px;
+  }
+
+  main.dashboard-content-wrapper {
+    padding: 0px !important;
+  }
+
+  .brws-books-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+
+  .my-dashboard {
+    padding: 25px 0px 20px 0px;
+    background-color: #fafcff;
+  }
+
+  .book-card-info h1 {
+    font-size: 12px;
+  }
+
+  .book-card-info p {
+    font-size: 12px;
+  }
+
+  .course-card-info h6 {
+    font-size: 12px;
+  }
+
+
+  .browse-category {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    padding: 15px;
+  }
+
+
+  .courses-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .home-section {
+    width: 100% !important;
+    padding: 20px;
+    margin: 45px auto;
+  }
+
+  /* home page start  */
+  .home-bg-top {
+    height: 477px;
+  }
+
+  .home-section {
+    width: 344px;
+  }
+
+  .home-video-container {
+    margin-top: 261px;
+  }
+
+  .home-nav button {
+    padding: 7px 35px;
+    font-size: 14px;
+  }
+
+  /* home page end  */
+
+  /* login page start  */
+  .login-form form {
+    top: 515px;
+    width: 320px;
+  }
+
+  .login-bg img {
+    width: 28%;
+  }
+
+  .login-form form {
+    padding: 18px !important;
+  }
+
+  .journals .journals-collection {
+    grid-template-columns: auto;
+  }
+
+  .journals .journals-collection h6 {
+    font-size: 11px;
+  }
+
+  .journal-details-section {
+    height: 100%;
+  }
+
+  .journal-details-section h2,
+  .journal-details-section h5 {
+    font-size: 18px;
+  }
+
+  /* video page start */
+  /* and audio page start */
+  .courses-video,
+  .courses-audio {
+    padding: 16px;
+  }
+
+  .courses-video-section,
+  .courses-audio-section {
+    flex-direction: column-reverse;
+  }
+
+  .courses-video-modul,
+  .courses-audio-modul {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .courses-video .video,
+  .courses-audio .audio {
+    width: 100%;
+  }
+
+
+
+  /* dashbord page  */
+  .dashbord-section {
+    flex-direction: column;
+  }
+
+  .dashobrd-book-section {
+    width: 100%;
+  }
+
+  .dashboard-course-section {
+    width: 100%;
+  }
+
+
 }
 
 /* For Small Size Tab */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .insights-book-wrapper {
+    overflow-y: scroll;
+    height: 650px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+  }
+
   .forum-post-info div {
     margin: 0px;
   }
