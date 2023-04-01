@@ -779,6 +779,11 @@ Front End Developed By Mahadi hassan
     height: 200px;
   }
 
+  .video-section-col.promo-video-col #player {
+    box-shadow: 0px 0 35.6554px 25px rgba(0, 0, 0, 0.07);
+    border-radius: var(--global-border-radius);
+  }
+
   .footer-row {
     display: flex;
     width: 100%;
@@ -1454,14 +1459,67 @@ Front End Developed By Mahadi hassan
 /* For Small Size Tab */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+  /* === Dashboard - Home :: Start === */
+  .header-container {
+    width: var(--s-m-container);
+  }
+
+  .header-row {
+    padding: 5px 35px;
+  }
+
+  .video-section-container {
+    width: var(--s-m-container);
+  }
+
+  .video-section-wrapper::before,
+  .video-section-wrapper::after {
+    display: none;
+  }
+
+  .video-section-col {
+    padding: 30px;
+  }
+
+  .video-section-col iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px !important;
+  }
+
+  #footer {
+    padding: 0;
+  }
+
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  .footer-row {
+    padding: 10px;
+  }
+
+  .footer-link ul li {
+    margin: 0 !important;
+  }
+
+  .footer-link ul li a {
+    font-size: 10px;
+  }
+
+  /* === Dashboard - Home :: End === */
+
+
   /* === Dashboard - Guides :: Start === */
   .guides-section {
     padding: 10px;
   }
+
   .guide-card {
     width: 30%;
     margin: 7px;
-}
+  }
+
   /* === Dashboard - Guides :: End === */
   /* forum mane page start */
   .forum-main {
@@ -1638,6 +1696,7 @@ Front End Developed By Mahadi hassan
   .forum-details-rightbar .trending-topics p {
     font-size: 16px;
   }
+
   .insights-book-wrapper {
     overflow-y: scroll;
     height: 650px;
@@ -1998,15 +2057,66 @@ Front End Developed By Mahadi hassan
 
 /* For Big and Average Size Tab */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-/* === Dashboard - Guides :: Start === */
-.guides-section {
+/* === Dashboard - Home :: Start === */
+.header-container {
+  width: var(--s-m-container);
+}
+
+.header-row {
+  padding: 5px 35px;
+}
+
+.video-section-container {
+  width: var(--s-m-container);
+}
+
+.video-section-wrapper::before,
+.video-section-wrapper::after {
+  display: none;
+}
+
+.video-section-col {
+  padding: 30px;
+}
+
+.video-section-col iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 450px !important;
+}
+
+#footer {
+  padding: 0;
+}
+
+.footer-container {
+  width: var(--s-m-container);
+}
+
+.footer-row {
   padding: 10px;
 }
-.guide-card {
-  width: 30%;
-  margin: 12px;
+
+.footer-link ul li {
+  margin: 0 !important;
 }
-/* === Dashboard - Guides :: End === */
+
+.footer-link ul li a {
+  font-size: 10px;
+}
+
+/* === Dashboard - Home :: End === */
+  /* === Dashboard - Guides :: Start === */
+  .guides-section {
+    padding: 10px;
+  }
+
+  .guide-card {
+    width: 30%;
+    margin: 12px;
+  }
+
+  /* === Dashboard - Guides :: End === */
   .forum-post-info div {
     margin: 0px;
   }
@@ -2242,7 +2352,55 @@ Front End Developed By Mahadi hassan
 
 /* for Tab and Laptop Medium Size Screen */
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
+/* === Dashboard - Home :: Start === */
+.header-container {
+  width: var(--s-m-container);
+}
 
+.header-row {
+  padding: 5px 35px;
+}
+
+.video-section-container {
+  width: var(--s-m-container);
+}
+
+.video-section-wrapper::before,
+.video-section-wrapper::after {
+  display: none;
+}
+
+.video-section-col {
+  padding: 30px;
+}
+
+.video-section-col iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 450px !important;
+}
+
+#footer {
+  padding: 0;
+}
+
+.footer-container {
+  width: var(--s-m-container);
+}
+
+.footer-row {
+  padding: 10px;
+}
+
+.footer-link ul li {
+  margin: 0 !important;
+}
+
+.footer-link ul li a {
+  font-size: 10px;
+}
+
+/* === Dashboard - Home :: End === */
   /* home page start  */
   .home-bg-top {
     height: 509px;
