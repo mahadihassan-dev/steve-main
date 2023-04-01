@@ -1757,7 +1757,16 @@ a {
 }
 
 /* insights page end  */
-/* forum main  page */
+/* === Dashboard - Insights :: End === */
+
+/* === Dashboard - Forum :: Start === */
+.forum-breadcrumb-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .forum-main {
   padding: 30px 24px 20px 30px;
   background-color: #fafcff;
