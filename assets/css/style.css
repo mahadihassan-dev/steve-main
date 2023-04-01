@@ -300,6 +300,11 @@ body::-webkit-scrollbar-thumb {
   height: 650px;
 }
 
+.video-section-col.promo-video-col #player {
+  box-shadow: 0px 0 35.6554px 25px rgba(0, 0, 0, 0.07);
+  border-radius: var(--global-border-radius);
+}
+
 a.hero-btn {
   display: inline-block;
   padding: 10px 20px;
