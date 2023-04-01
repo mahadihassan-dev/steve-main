@@ -1453,6 +1453,16 @@ Front End Developed By Mahadi hassan
 
 /* For Small Size Tab */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  /* === Dashboard - Guides :: Start === */
+  .guides-section {
+    padding: 10px;
+  }
+  .guide-card {
+    width: 30%;
+    margin: 7px;
+}
+  /* === Dashboard - Guides :: End === */
   /* forum mane page start */
   .forum-main {
     flex-direction: column;
@@ -1988,7 +1998,15 @@ Front End Developed By Mahadi hassan
 
 /* For Big and Average Size Tab */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-
+/* === Dashboard - Guides :: Start === */
+.guides-section {
+  padding: 10px;
+}
+.guide-card {
+  width: 30%;
+  margin: 12px;
+}
+/* === Dashboard - Guides :: End === */
   .forum-post-info div {
     margin: 0px;
   }
