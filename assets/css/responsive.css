@@ -414,6 +414,20 @@ Front End Developed By Mahadi hassan
 
 
   /* === Dashboard - Write Forum :: Start */
+
+  .forum-breadcrumb-row .write-forum-btns a {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .forum-breadcrumb-col {
+    font-size: 14px;
+  }
+
+  .forum-breadcrumb-col h3 {
+    font-size: 18px;
+}
+
   .dashboard-write-forum .dash-main-right main.dashboard-content-wrapper {
     padding: 10px !important;
   }
@@ -2316,7 +2330,7 @@ Front End Developed By Mahadi hassan
   }
 
   #footer {
-    padding: 0;
+    padding: 30px 12px;
   }
 
   .footer-container {
@@ -2754,7 +2768,7 @@ Front End Developed By Mahadi hassan
   }
 
   #footer {
-    padding: 0;
+    padding: 30px 12px;
   }
 
   .footer-container {
@@ -3154,6 +3168,9 @@ Front End Developed By Mahadi hassan
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  #footer {
+    padding: 30px 12px;
+  }
   .checkbox-head {
     margin-left: 0;
     padding: 20px;
@@ -3587,6 +3604,12 @@ Front End Developed By Mahadi hassan
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1360px) {
+  #footer {
+    padding: 30px 12px;
+  }
+  .lb-container {
+    width: var(--s-m-container);
+  }
   .checkbox-head {
     margin-left: 0;
     padding: 20px;
