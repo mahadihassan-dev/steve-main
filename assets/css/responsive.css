@@ -3,7 +3,7 @@ Theme Name: iManifest
 Theme URI: https://imanifest.netlify.app
 Author: BdCalling IT
 Author URI: https://wordpress.org/
-Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic Landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.3
 Requires at least: 6.0
@@ -42,21 +42,19 @@ Front End Developed By Mahadi hassan
 --> Dashboard   - Journals Details
 --> Dashboard   - Write journal
 --> Dashboard   - User Profile (Formaly Known as My Account)
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* For Extra Small Device to 320px Device */
 @media only screen and (min-width: 320px) and (max-width: 360px) {
 
-  /* == Dashboard Breadcrumb :: Start == */
+  /* === Dashboard Breadcrumb :: Start === */
   .dash-breadcrumb-tree {
     padding: 35px 0px;
   }
 
-  /* == Dashboard Breadcrumb :: End == */
+  /* === Dashboard Breadcrumb :: End === */
 
 
-  /* == lading  - Home :: Start == */
+  /* === Landing  - Home :: Start === */
 
   /* Header :: Start */
   .header-row {
@@ -113,10 +111,11 @@ Front End Developed By Mahadi hassan
     width: var(--s-m-container);
   }
 
-  /* == lading  - Home :: End == */
+  /* === Landing  - Home :: End === */
 
-  /* == lading  - About :: Start == */
+  /* === Landing  - About :: Start === */
   .section-slide-row {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -138,9 +137,9 @@ Front End Developed By Mahadi hassan
     text-align: justify;
   }
 
-  /* == lading  - About :: End == */
+  /* === Landing  - About :: End === */
 
-  /* == lading  - Pricing :: Start == */
+  /* === Landing  - Pricing :: Start === */
 
   #pricing {
     margin-top: 100px;
@@ -213,7 +212,39 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
+
+  /* === Landing - Checkout :: Start === */
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column-reverse;
+    padding: 15px;
+  }
+
+  .checkout-billing-form.shadow-sm {
+    margin-bottom: 30px;
+  }
+
+  .checkbox-head {
+    margin-left: 0;
+    padding: 0px 15px;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-billing-form,
+  .checkout-details-section {
+    width: 100%;
+  }
+
+  /* === Landing - Checkout :: End === */
 
   /* ==== Landing - Policy :: Start ==== */
   .policy-page-wrapper {
@@ -231,6 +262,26 @@ Front End Developed By Mahadi hassan
   }
 
   /* ==== Landing - Policy :: End ==== */
+
+  /* === Dashboard - Home :: Start === */
+  .browse-category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 0px 10px;
+  }
+
+  .brws-books-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 55px;
+    grid-row-gap: 0px;
+  }
+
+  /* === Dashboard - Home :: End === */
 
   /* ==== Dashbaord - Books :: Start ==== */
   .books-collection {
@@ -748,9 +799,8 @@ Front End Developed By Mahadi hassan
   }
 }
 
-/* For Smartphone */
 @media only screen and (min-width: 361px) and (max-width: 479px) {
-  /* == lading  - Home :: Start == */
+  /* == Landing  - Home :: Start == */
 
   /* Header :: Start */
   .header-row {
@@ -812,9 +862,9 @@ Front End Developed By Mahadi hassan
     width: var(--s-m-container);
   }
 
-  /* == lading  - Home :: End == */
+  /* == Landing  - Home :: End == */
 
-  /* == lading  - About :: Start == */
+  /* == Landing  - About :: Start == */
   .section-slide-row {
     display: flex;
     flex-direction: column;
@@ -832,9 +882,9 @@ Front End Developed By Mahadi hassan
     height: 100%;
   }
 
-  /* == lading  - About :: End == */
+  /* == Landing  - About :: End == */
 
-  /* == lading  - Pricing :: Start == */
+  /* == Landing  - Pricing :: Start == */
 
   #pricing {
     margin-top: 100px;
@@ -903,7 +953,39 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
+
+  /* === Landing - Checkout :: Start === */
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .checkout-billing-form.shadow-sm {
+    margin-bottom: 30px;
+  }
+
+  .checkbox-head {
+    margin-left: 0;
+    padding: 0px 15px;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-billing-form,
+  .checkout-details-section {
+    width: 100%;
+  }
+
+  /* === Landing - Checkout :: End === */
 
   /* ==== Landing - Policy :: Start ==== */
   .policy-page-wrapper {
@@ -1296,16 +1378,11 @@ Front End Developed By Mahadi hassan
 
   /* === Dashboard - Insights :: End */
 
-
-
-
   .books-collection .book {
     width: 100%;
     margin: 0px 25px;
     padding: 0px 15px;
   }
-
-
 
   .books-section {
     margin: 0;
@@ -1318,7 +1395,7 @@ Front End Developed By Mahadi hassan
 
   .brws-books-card-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 0px;
@@ -1456,7 +1533,6 @@ Front End Developed By Mahadi hassan
 
 }
 
-/* For Small Size Tab */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
   /* === Dashboard - Home :: Start === */
@@ -1504,12 +1580,28 @@ Front End Developed By Mahadi hassan
   }
 
   .footer-link ul li a {
-    font-size: 10px;
+    font-size: 50%;
   }
 
   /* === Dashboard - Home :: End === */
 
-  /* == lading  - Pricing :: Start == */
+  /* === Landing - About :: Start === */
+  .section-slide-row {
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .slide-col {
+    padding: 30px;
+  }
+
+  .slide-content.about-desc {
+    text-align: justify;
+  }
+
+  /* === Landing - About :: End === */
+
+  /* == Landing  - Pricing :: Start == */
 
   #pricing {
     margin-top: 100px;
@@ -1582,7 +1674,64 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
+
+  /* === Landing - Checkout :: Start === */
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .checkout-billing-form.shadow-sm {
+    margin-bottom: 30px;
+  }
+
+  .checkbox-head {
+    margin-left: 0;
+    padding: 0px 15px;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-billing-form,
+  .checkout-details-section {
+    width: 100%;
+  }
+
+  /* === Landing - Checkout :: End === */
+
+  /* === Dashboard - Home :: Start === */
+  .best-selling-book {
+    padding: 60px 0px;
+  }
+
+  .browse-category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 0px 10px;
+  }
+
+  .book-card-info h1 {
+    font-size: 16px;
+  }
+
+  .book-card-info p {
+    color: #8D8D8D;
+    font-size: 14px;
+  }
+
+  /* === Dashboard - Home :: End === */
 
   /* === Dashboard - Guides :: Start === */
   .guides-section {
@@ -1595,7 +1744,9 @@ Front End Developed By Mahadi hassan
   }
 
   /* === Dashboard - Guides :: End === */
-  /* forum mane page start */
+
+
+  /* === Dashboard - Forum :: Start === */
   .forum-main {
     flex-direction: column;
     padding: 5px;
@@ -1771,210 +1922,8 @@ Front End Developed By Mahadi hassan
     font-size: 16px;
   }
 
-  .insights-book-wrapper {
-    overflow-y: scroll;
-    height: 650px;
-    padding: 10px 10px;
-    margin: 20px 10px;
-  }
-
   .forum-post-info div {
     margin: 0px;
-  }
-
-  .home-section {
-    width: 100% !important;
-    padding: 20px;
-    margin: 45px auto;
-  }
-
-  /* home page start  */
-  .home-bg-top {
-    height: 773px;
-  }
-
-  .home-section {
-    width: 420px;
-  }
-
-  .home-video-container {
-    margin-top: 495px;
-  }
-
-  .home-nav button {
-    padding: 7px 35px;
-    font-size: 14px;
-  }
-
-  /* home page end  */
-
-
-
-  /* login form start */
-  .login-bg img {
-    width: 23%;
-  }
-
-  .login-form form {
-    top: 485px;
-  }
-
-  /* login end 
-     */
-  /* book page start  */
-  .books-collection {
-    grid-template-columns: auto auto;
-  }
-
-  /* book page end  */
-  /* guides page start  */
-  .guides-collection {
-    grid-template-columns: auto;
-    justify-items: center;
-  }
-
-  /* guides page end  */
-  /* guides details page end  */
-  .guide-details-section {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-
-  .guide-details-sitebar {
-    width: 100%;
-  }
-
-  .guide-details .d-flex {
-    flex-direction: column;
-  }
-
-  .guide-details-sitebar img {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-
-  .guide-details-sitebar h6 {
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .guide-details-sitebar p {
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  /* guides  details page end  */
-
-  /* .journals page start*/
-  .journals .journals-collection {
-    grid-template-columns: auto;
-  }
-
-  .journals {
-    margin: 18px 20px;
-  }
-
-  .journals button {
-    padding: 10px 8px;
-    font-size: 12px;
-  }
-
-  /* .journals page end*/
-
-  /* journals details page start  */
-  .journal-details-section {
-    height: 100%;
-  }
-
-  .journal-details-section h2,
-  .journal-details-section h5 {
-    font-size: 18px;
-  }
-
-  /* journals details page end  */
-  /*write journals page start  */
-  .write-journal {
-    padding: 7px 11px;
-    background-color: #fafcff;
-  }
-
-  .write-journal button {
-    padding: 12px 13px;
-    font-size: 14px;
-  }
-
-  .write-journal .active {
-    padding: 12px 13px;
-    font-size: 14px;
-  }
-
-  /* video page start */
-  /* and audio page start */
-  .courses-video,
-  .courses-audio {
-    padding: 16px;
-  }
-
-  .courses-video-section,
-  .courses-audio-section {
-    flex-direction: column-reverse;
-  }
-
-  .courses-video-modul,
-  .courses-audio-modul {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  .courses-video .video,
-  .courses-audio .audio {
-    width: 100%;
-  }
-
-  /* insights cursor section  */
-  .insights-section {
-    flex-direction: column;
-  }
-
-  .insights-book-section {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-  }
-
-  .insights-course-section {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    margin-top: 20px;
-  }
-
-  /* dashbord page  */
-  .dashbord-section {
-    flex-direction: column;
-  }
-
-  .dashobrd-book-section {
-    width: 100%;
-  }
-
-  .dashboard-course-section {
-    width: 100%;
-  }
-
-  .dashobrd-book-section .dashobrd-book {
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-  }
-
-  .dashobrd-book-section .dashobrd-book .dashobrd-book-card h6 {
-    font-size: 12px;
-  }
-
-  .dashobrd-book-section .dashobrd-book .dashobrd-book-card p {
-    font-size: 10px;
   }
 
   /* forum mane page start */
@@ -2127,9 +2076,215 @@ Front End Developed By Mahadi hassan
   .forum-details-rightbar .trending-topics p {
     font-size: 16px;
   }
+
+  /* === Dashboard - Forum :: End === */
+
+  .insights-book-wrapper {
+    overflow-y: scroll;
+    height: 650px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+  }
+
+  .home-section {
+    width: 100% !important;
+    padding: 20px;
+    margin: 45px auto;
+  }
+
+  /* home page start  */
+  .home-bg-top {
+    height: 773px;
+  }
+
+  .home-section {
+    width: 420px;
+  }
+
+  .home-video-container {
+    margin-top: 495px;
+  }
+
+  .home-nav button {
+    padding: 7px 35px;
+    font-size: 14px;
+  }
+
+  /* home page end  */
+
+  /* === Dashboard - Login :: Start === */
+  .login-bg img {
+    width: 23%;
+  }
+
+  .login-form form {
+    top: 485px;
+  }
+
+  /* === Dashboard - Login :: End === */
+
+
+  /* === Dashboard - Books Collection :: Start === */
+  .books-collection {
+    grid-template-columns: auto auto;
+  }
+
+  /* === Dashboard - Books Collection :: End === */
+
+
+  /* === Dashboard - Guides :: Start === */
+  .guides-collection {
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+
+  .guide-details-section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .guide-details-sitebar {
+    width: 100%;
+  }
+
+  .guide-details .d-flex {
+    flex-direction: column;
+  }
+
+  .guide-details-sitebar img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .guide-details-sitebar h6 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .guide-details-sitebar p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  /* === Dashboard - Guides :: End === */
+
+  /* === Dashboard - Journal :: Start === */
+  .journals .journals-collection {
+    grid-template-columns: auto;
+  }
+
+  .journals {
+    margin: 18px 20px;
+  }
+
+  .journals button {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  /* .journals page end*/
+
+  /* journals details page start  */
+  .journal-details-section {
+    height: 100%;
+  }
+
+  .journal-details-section h2,
+  .journal-details-section h5 {
+    font-size: 18px;
+  }
+
+  /* journals details page end  */
+  /*write journals page start  */
+  .write-journal {
+    padding: 7px 11px;
+    background-color: #fafcff;
+  }
+
+  .write-journal button {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+
+  .write-journal .active {
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+
+  /* === Dashboard - Journal :: End === */
+
+  /* video page start */
+  /* and audio page start */
+  .courses-video,
+  .courses-audio {
+    padding: 16px;
+  }
+
+  .courses-video-section,
+  .courses-audio-section {
+    flex-direction: column-reverse;
+  }
+
+  .courses-video-modul,
+  .courses-audio-modul {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .courses-video .video,
+  .courses-audio .audio {
+    width: 100%;
+  }
+
+  /* insights cursor section  */
+  .insights-section {
+    flex-direction: column;
+  }
+
+  .insights-book-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .insights-course-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-top: 20px;
+  }
+
+  /* dashbord page  */
+  .dashbord-section {
+    flex-direction: column;
+  }
+
+  .dashobrd-book-section {
+    width: 100%;
+  }
+
+  .dashboard-course-section {
+    width: 100%;
+  }
+
+  .dashobrd-book-section .dashobrd-book {
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+
+  .dashobrd-book-section .dashobrd-book .dashobrd-book-card h6 {
+    font-size: 12px;
+  }
+
+  .dashobrd-book-section .dashobrd-book .dashobrd-book-card p {
+    font-size: 10px;
+  }
+
+
 }
 
-/* For Big and Average Size Tab */
 @media only screen and (min-width: 768px) and (max-width: 979px) {
 
   /* === Dashboard - Home :: Start === */
@@ -2182,7 +2337,22 @@ Front End Developed By Mahadi hassan
 
   /* === Dashboard - Home :: End === */
 
-  /* == lading  - Pricing :: Start == */
+  /* === Landing - About :: Start === */
+  .section-slide-row {
+    padding: 60px;
+  }
+
+  .slide-col {
+    padding: 30px;
+  }
+
+  .slide-content.about-desc {
+    text-align: justify;
+  }
+
+  /* === Landing - About :: End === */
+
+  /* == Landing  - Pricing :: Start == */
 
   #pricing {
     margin-top: 100px;
@@ -2212,7 +2382,7 @@ Front End Developed By Mahadi hassan
   .pricing-row {
     flex-direction: row;
     padding: 10px;
-}
+  }
 
   .pricing-col {
     width: 50% !important;
@@ -2255,7 +2425,58 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
+
+  /* === Landing - Policy Page :: Stat === */
+  .policy-page-container {
+    width: var(--s-m-container);
+  }
+
+  /* === Landing - Policy Page :: End === */
+
+  /* === Landing - Checkout :: Start === */
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-wrapper {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .checkout-billing-form.shadow-sm {
+    margin-bottom: 30px;
+  }
+
+  .checkbox-head {
+    margin-left: 0;
+    padding: 0px 15px;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-billing-form,
+  .checkout-details-section {
+    width: 100%;
+  }
+
+  /* === Landing - Checkout :: End === */
+
+  /* === Dashboard - Home :: Start === */
+  .browse-category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 0px 10px;
+  }
+
+  /* === Dashboard - Home :: End === */
 
   /* === Dashboard - Guides :: Start === */
   .guides-section {
@@ -2499,9 +2720,9 @@ Front End Developed By Mahadi hassan
     margin: 0px 25px;
     padding: 0px 15px;
   }
+
 }
 
-/* for Tab and Laptop Medium Size Screen */
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
 
   /* === Dashboard - Home :: Start === */
@@ -2554,7 +2775,18 @@ Front End Developed By Mahadi hassan
 
   /* === Dashboard - Home :: End === */
 
-  /* == lading  - Pricing :: Start == */
+  /* === Landing - About :: Start === */
+  .section-slide-row {
+    padding: 60px;
+  }
+
+  .slide-col {
+    padding: 30px;
+  }
+
+  /* === Landing - About :: End === */
+
+  /* == Landing  - Pricing :: Start == */
 
   #pricing {
     margin-top: 100px;
@@ -2584,7 +2816,7 @@ Front End Developed By Mahadi hassan
   .pricing-row {
     flex-direction: row;
     padding: 10px;
-}
+  }
 
   .pricing-col {
     width: 50% !important;
@@ -2627,7 +2859,16 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
+
+  /* === Landing - Policy Page :: Stat === */
+  .policy-page-container {
+    width: var(--s-m-container);
+    padding: 30px;
+  }
+
+  /* === Landing - Policy Page :: End === */
+
   /* home page start  */
   .home-bg-top {
     height: 509px;
@@ -2640,8 +2881,13 @@ Front End Developed By Mahadi hassan
   /* home page end  */
 
   /* check out start  */
+  .checkout-body {
+    height: 100%;
+  }
+
   .checkbox-head {
-    margin-left: 8%;
+    margin-left: 0;
+    padding: 0px 45px;
   }
 
   .checkout-billing-form {
@@ -2907,12 +3153,72 @@ Front End Developed By Mahadi hassan
   }
 }
 
-/* for Medium Size Laptop and Full Size Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  /* === header :: Start */
+  .checkbox-head {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-filed-col {
+    margin: 15px;
+  }
+
+  /* === Header :: Start === */
   .header-container {
     width: var(--s-m-container);
   }
+
+  .header-row {
+    padding: 10px 20px;
+  }
+
+  /* === Header :: End === */
+
+  /* === Landing - Home :: Start === */
+  .video-section-wrapper::before {
+    top: -5px;
+    left: -350px;
+  }
+
+  .video-section-container {
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 30px;
+  }
+
+  /* === Landing - Home :: End === */
+
+  /* === Landing - About :: Start === */
+  .section-slide-row {
+    padding: 60px;
+  }
+
+  /* === Landing - About :: End === */
+
+  /* === Landing - Policy Page :: Stat === */
+  .policy-page-container {
+    width: var(--s-m-container);
+    padding: 30px;
+  }
+
+  /* === Landing - Policy Page :: End === */
+
+  /* === Footer :: Start === */
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  .footer-link-item.footer-link ul li a {
+    font-size: 12px;
+  }
+
+  /* === Footer :: End === */
+
   .forum-post-info {
     margin-top: 15px;
     flex-direction: column;
@@ -2977,7 +3283,7 @@ Front End Developed By Mahadi hassan
 
   /* home page end  */
 
-  /* == lading  - Pricing :: Start == */
+  /* == Landing  - Pricing :: Start == */
 
   #pricing {
     margin-top: 100px;
@@ -3007,7 +3313,7 @@ Front End Developed By Mahadi hassan
   .pricing-row {
     flex-direction: row;
     padding: 10px;
-}
+  }
 
   .pricing-col {
     width: 50% !important;
@@ -3050,7 +3356,7 @@ Front End Developed By Mahadi hassan
     z-index: 1;
   }
 
-  /* == lading  - Pricing :: End == */
+  /* == Landing  - Pricing :: End == */
 
   /* book page start  */
   .books-collection {
@@ -3280,9 +3586,86 @@ Front End Developed By Mahadi hassan
   }
 }
 
-/* For Big Size Screen More than 1200px */
+@media only screen and (min-width: 1200px) and (max-width: 1360px) {
+  .checkbox-head {
+    margin-left: 0;
+    padding: 20px;
+  }
 
-@media only screen and (min-width: 1201px) and (max-width: 1360px) {
+  .checkout-body {
+    height: 100%;
+  }
+
+  .checkout-filed-col {
+    margin: 15px;
+  }
+
+  /* === Header :: Start === */
+  .header-container {
+    width: var(--s-m-container);
+  }
+
+  .header-row {
+    padding: 10px 20px;
+  }
+
+  /* === Header :: End === */
+
+  /* === Landing - Home :: Start === */
+  .video-section-wrapper::before {
+    top: -5px;
+    left: -285px;
+  }
+
+  /* === Landing - Home :: End === */
+
+  /* === Landing - About :: Start === */
+
+  .slide-col {
+    width: 50%;
+    padding: 25px 30px;
+    height: 100%;
+  }
+
+  /* === Landing - About :: End  === */
+
+  /* === Landing - Pricing :: Start === */
+  .section-slide {
+    width: var(--s-m-container);
+  }
+
+  .section-wrapper::before {
+    left: -285px;
+  }
+
+  .pricing-card-header {
+    text-align: center;
+  }
+
+  .pricing-card-header p {
+    font-size: 32px;
+  }
+
+  /* === Landing - Pricing :: End === */
+
+  /* === Landing - Policy Page :: Stat === */
+  .policy-page-container {
+    width: var(--s-m-container);
+    padding: 30px;
+  }
+
+  /* === Landing - Policy Page :: End === */
+
+  /* === Footer :: Start === */
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  .footer-link-item.footer-link ul li a {
+    font-size: 80%;
+  }
+
+  /* === Footer :: End === */
 
   /* book page start  */
   .books-collection {
@@ -3324,4 +3707,75 @@ Front End Developed By Mahadi hassan
     grid-column-gap: 40px;
     grid-row-gap: 23px;
   }
+}
+
+@media only screen and (min-width: 1361px) and (max-width: 1440px) {
+
+  /* === Header :: Start === */
+  .header-container {
+    width: var(--s-m-container);
+  }
+
+  .header-row {
+    padding: 10px 30px;
+  }
+
+  /* === Header :: End === */
+
+  /* === Landing - About :: Start === */
+  .section-slide-row {
+    padding: 30px;
+  }
+
+  /* === Landing - About :: End === */
+
+  /* === Landing - Pricing :: Start === */
+  .section-slide {
+    width: var(--s-m-container);
+  }
+
+  .section-wrapper::before {
+    left: -285px;
+  }
+
+  .pricing-card-header {
+    text-align: center;
+  }
+
+  .pricing-card-header p {
+    font-size: 32px;
+  }
+
+  /* === Landing - Pricing :: End === */
+
+  /* === Landing - Policy Page :: Stat === */
+  .policy-page-container {
+    width: var(--s-m-container);
+    padding: 30px;
+  }
+
+  /* === Landing - Policy Page :: End === */
+
+  /* === Footer :: Start === */
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  .footer-link-item.footer-link ul li a {
+    font-size: 80%;
+  }
+
+  /* === Footer :: End === */
+
+
+  /* === Footer :: Start */
+  .footer-container {
+    width: var(--s-m-container);
+  }
+
+  .footer-social {
+    padding: 0px 20px;
+  }
+
+  /* === Footer :: End */
 }

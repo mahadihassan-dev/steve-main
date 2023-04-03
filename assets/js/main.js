@@ -62,4 +62,10 @@ function toggleTopButton() {
         document.getElementById('back-to-up').classList.add('d-none');
     }
 }
-  // Scroll Back to top :: End
+// Scroll Back to top :: End
+
+let navbar = document.getElementById("primary-header");
+let navOffset = navbar.offsetTop;
+window.addEventListener("scroll", () => {
+    (window.scrollY >= navOffset) ? navbar.classList.add("sticky_nav") : navbar.classList.remove("sticky_nav")
+});

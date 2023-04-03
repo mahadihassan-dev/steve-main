@@ -234,14 +234,112 @@
 /* for Tab and Laptop Medium Size Screen */
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
     /* Dashboard Header :: Start */
+    .journal-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .journal-btn button {
+        margin: 0;
+        display: block;
+        width: 200px;
+    }
+    textarea#journal-description {
+        height: 240px !important;
+    }
+    aside#sidebar {
+        display: none;
+    }
 
+    .sidebar-logout {
+        margin-top: 285px;
+    }
+
+    .sidebtn-mb button {
+        display: block;
+    }
+
+    .dash-main-right.full-width {
+        padding-left: 0 !important;
+    }
+
+    .sidebar_show_btn {
+        display: none !important;
+    }
+
+    header.dash-header {
+        padding: 15px;
+    }
+
+    .dash-logo a {
+        display: none;
+    }
+
+    .dash-logo button i {
+        color: #fff;
+    }
+
+    .sidebar-offcanvas div#staticBackdrop {
+        width: 255px;
+    }
     /* Dashboard Header :: End */
 }
 
 /* for Medium Size Laptop and Full Size Laptop */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
     /* Dashboard Header :: Start */
+    .journal-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .journal-btn button {
+        margin: 0;
+        display: block;
+        width: 200px;
+    }
+    textarea#journal-description {
+        height: 240px !important;
+    }
+    aside#sidebar {
+        display: none;
+    }
 
+    .sidebar-logout {
+        margin-top: 285px;
+    }
+
+    .sidebtn-mb button {
+        display: block;
+    }
+
+    .dash-main-right.full-width {
+        padding-left: 0 !important;
+    }
+
+    .sidebar_show_btn {
+        display: none !important;
+    }
+
+    header.dash-header {
+        padding: 15px;
+    }
+
+    .dash-logo a {
+        display: none;
+    }
+
+    .dash-logo button i {
+        color: #fff;
+    }
+
+    .sidebar-offcanvas div#staticBackdrop {
+        width: 255px;
+    }
     /* Dashboard Header :: End */
 }
 
