@@ -107,22 +107,17 @@
                     <div class="sidebar-wrapper">
                         <div class="siderbar-menu">
                             <ul class="side-nav">
-                                <li><a href="index.html" class="side-nav-link active"><i class="bi bi-columns-gap"></i> My
-                                        Dashboard</a></li>
-                                <li><a href="books.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Books</a></li>
-                                <li><a href="my-journals.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Journals</a></li>
+                                <li><a href="dashboard.html" class="side-nav-link active"><i class="bi bi-columns-gap"></i> My Dashboard</a></li>
+                                <li><a href="books.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Book</a></li>
+                                <li><a href="all-journals.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Journal</a></li>
                                 <li><a href="guides.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Guides</a></li>
-                                <li><a href="courses.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Courses</a></li>
-                                <li><a href="audio.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Audios</a></li>
-                                <li><a href="Video.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Videos</a></li>
-                                <li><a href="guide-details.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Guides Details</a></li>
+                                <li class="active"><a href="courses.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Courses</a></li>
                                 <li><a href="insights.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Insights</a></li>
                                 <li><a href="forum-main.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Forum</a></li>
-                                <li><a href="write-forum-post.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Write Forum Post</a></li>
                             </ul>
                         </div>
                         <div class="sidebar-logout">
-                            <a href="login.html" class="dash-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                            <a href="#" class="dash-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
                         </div>
                     </div>
                 </aside>
@@ -132,7 +127,7 @@
                     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                         aria-labelledby="staticBackdropLabel">
                         <div class="offcanvas-header">
-                            <a href="index.html">
+                            <a href="dashboard.html">
                                 <img src="assets/images/logo/logo.png" alt="" class="img-fluid" width="60" height="60">
                             </a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
@@ -142,33 +137,23 @@
                             <div>
                                 <div class="siderbar-menu">
                                     <ul class="side-nav">
-                                        <li><a href="index.html" class="side-nav-link active"><i class="bi bi-columns-gap"></i>
-                                                My
-                                                Dashboard</a></li>
-                                        <li><a href="books.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Book</a>
-                                        </li>
-                                        <li><a href="my-journals.html" class="side-nav-link"><i class="bi bi-columns-gap"></i>
-                                                Journal</a></li>
-                                        <li><a href="guides.html" class="side-nav-link"><i class="bi bi-columns-gap"></i>
-                                                Guides</a></li>
-                                        <li><a href="courses.html" class="side-nav-link"><i class="bi bi-columns-gap"></i>
-                                                Courses</a></li>
-                                        <li><a href="insights.html" class="side-nav-link"><i class="bi bi-columns-gap"></i>
-                                                Insights</a>
-                                        </li>
-                                        <li><a href="forum-main.html" class="side-nav-link"><i class="bi bi-columns-gap"></i>
-                                                Forum</a></li>
+                                        <li><a href="dashboard.html" class="side-nav-link active"><i class="bi bi-columns-gap"></i> My Dashboard</a></li>
+                                        <li><a href="books.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Book</a></li>
+                                        <li><a href="all-journals.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Journal</a></li>
+                                        <li><a href="guides.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Guides</a></li>
+                                        <li class="active"><a href="courses.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Courses</a></li>
+                                        <li><a href="insights.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Insights</a></li>
+                                        <li><a href="forum-main.html" class="side-nav-link"><i class="bi bi-columns-gap"></i> Forum</a></li>
                                     </ul>
                                 </div>
                                 <div class="sidebar-logout">
-                                    <a href="login.html" class="dash-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                                    <a href="#" class="dash-logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Offcanvas Sidebar :: End -->
-                <a href="javascript:void(0)" class="sidebar-btn" role="button"><i class="bi bi-chevron-left"></i></a>
             </div>
         </div>
         <!-- Dashboard :: Right -> End -->
@@ -209,8 +194,36 @@
                             <div class="course-card-thumb">
                                 <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
                                     alt="course-card-thumb" class="img-fluid w-100">
+                                <a href="audio.html">
+                                    <i class="bi bi-soundwave"></i>
+                                </a>
+                            </div>
+                            <div class="course-card-info">
+                                <h6>Be a side husler as a student</h6>
+                                <p><i class="bi bi-clock-fill me-1"></i>14:16</p>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            
+                            <div class="course-card-thumb">
+                                <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
+                                    alt="course-card-thumb" class="img-fluid w-100">
                                 <a href="videos.html">
                                     <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+                            <div class="course-card-info">
+                                <h6>Be a side husler as a student</h6>
+                                <p><i class="bi bi-clock-fill me-1"></i>14:16</p>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            
+                            <div class="course-card-thumb">
+                                <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
+                                    alt="course-card-thumb" class="img-fluid w-100">
+                                <a href="audio.html">
+                                    <i class="bi bi-soundwave"></i>
                                 </a>
                             </div>
                             <div class="course-card-info">
@@ -251,8 +264,8 @@
                             <div class="course-card-thumb">
                                 <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
                                     alt="course-card-thumb" class="img-fluid w-100">
-                                <a href="videos.html">
-                                    <i class="bi bi-play-fill"></i>
+                                <a href="audio.html">
+                                    <i class="bi bi-soundwave"></i>
                                 </a>
                             </div>
                             <div class="course-card-info">
@@ -279,36 +292,8 @@
                             <div class="course-card-thumb">
                                 <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
                                     alt="course-card-thumb" class="img-fluid w-100">
-                                <a href="videos.html">
-                                    <i class="bi bi-play-fill"></i>
-                                </a>
-                            </div>
-                            <div class="course-card-info">
-                                <h6>Be a side husler as a student</h6>
-                                <p><i class="bi bi-clock-fill me-1"></i>14:16</p>
-                            </div>
-                        </div>
-                        <div class="course-card">
-                            
-                            <div class="course-card-thumb">
-                                <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
-                                    alt="course-card-thumb" class="img-fluid w-100">
-                                <a href="videos.html">
-                                    <i class="bi bi-play-fill"></i>
-                                </a>
-                            </div>
-                            <div class="course-card-info">
-                                <h6>Be a side husler as a student</h6>
-                                <p><i class="bi bi-clock-fill me-1"></i>14:16</p>
-                            </div>
-                        </div>
-                        <div class="course-card">
-                            
-                            <div class="course-card-thumb">
-                                <img src="assets/images/course-thumbnail/course-thumbnail-sm (1).png"
-                                    alt="course-card-thumb" class="img-fluid w-100">
-                                <a href="videos.html">
-                                    <i class="bi bi-play-fill"></i>
+                                <a href="audio.html">
+                                    <i class="bi bi-soundwave"></i>
                                 </a>
                             </div>
                             <div class="course-card-info">
