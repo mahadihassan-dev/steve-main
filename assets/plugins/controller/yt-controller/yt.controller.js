@@ -1,3 +1,4 @@
+// Home Page Video Controller
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
@@ -36,4 +37,14 @@ setTimeout(myFunction, 20000); // call myFunction after 2 minutes
 function myFunction() {
     buyBtn.style.display = "block";
     buyBtn.style.textAlign = "center";
+}
+
+// Course Enroll Thumbnail
+var CourseThumbVideo;
+function onYouTubeIframeAPIReady() {
+    CourseThumbVideo = new YT.Player('CourseThumbVideo', {
+    width: '100%',
+    height: '550',
+    videoId: 'Zqvx3aNjjXw'
+  });
 }

@@ -42,6 +42,7 @@ Front End Developed By Mahadi hassan
 --> Dashboard   - Journals Details
 --> Dashboard   - Write journal
 --> Dashboard   - User Profile (Formaly Known as My Account)
+--> Dashboard   - Single Course Enroll
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -2566,3 +2567,40 @@ ul.post-tag li a {
   margin-top: 24px;
 }
 /* === Landing - Checkout :: End === */
+
+/* === Dashboard - Single Course Enroll :: Start === */
+.course_enroll-wrapper {
+  width: 100%;
+}
+.course_enroll-left {
+  width: 70%;
+  padding: 30px;
+  background: #fff;
+}
+.course_enroll-right {
+  width: 30%;
+  padding: 30px;
+  background: #fff;
+}
+ul.course_short-overview li.course_short-overview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.course_short-overview-title h6 {
+  margin-left: 8px;
+  margin-bottom: 0;
+}
+.course_short-overview-title i {
+  margin-top: 2px;
+}
+
+ul.course_review-star li i {
+  color: #ed9700;
+}
+.course_short-overview-title {
+  display: flex;
+  align-items: center;
+}
+/* === Dashboard - Single Course Enroll :: End === */
