@@ -2574,13 +2574,13 @@ ul.post-tag li a {
 }
 .course_enroll-left {
   width: 70%;
-  padding: 30px;
-  background: #fff;
+  /* padding: 30px;
+  background: #fff; */
 }
 .course_enroll-right {
   width: 30%;
-  padding: 30px;
-  background: #fff;
+  /* padding: 30px; */
+  /* background: #fff; */
 }
 ul.course_short-overview li.course_short-overview-item {
   display: flex;
@@ -2603,4 +2603,83 @@ ul.course_review-star li i {
   display: flex;
   align-items: center;
 }
+/* ===========Khaled work start =========== */
+.course_enroll-card{
+  border: 1px solid #cdcfd5;
+  border-radius: 6px;
+}
+.course_enroll_body {
+  background-color: #F4F6F9;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 30px;
+  border-bottom: 1px solid #cdcfd5;
+  text-align: center;
+}
+.course-overview {
+  padding: 20px 30px;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.course_enroll_pricing{
+  text-align: start;
+}
+.course_enroll_dtn a{
+  background: #3883fd;
+  color: #fff !important;
+  font-size: 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+.course_enroll-video-thumb {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+.course_details_info{
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+.course_details_info h3 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.course_details_list {
+  list-style: disc;
+  padding-left: 20px;
+  width: calc(50% - (2.4rem/2));
+}
+.accordion-body .course_content-list {
+  padding: 0;
+}
+
+.course_content-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.course_item-name {
+  display: flex;
+}
+
+.course_item-name i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.course_item-time i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+/* ============ Khaled work end ============= */
+
 /* === Dashboard - Single Course Enroll :: End === */
